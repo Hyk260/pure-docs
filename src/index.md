@@ -1,0 +1,40 @@
+---
+layout: home
+
+title: PureAdmin
+titleTemplate: 使用 vue3 + Element-Plus开发 用于学习参考
+
+hero:
+  name: PureAdmin
+  text: 使用 vue3 + Element-Plus开发 用于学习参考
+  image:
+    src: https://ljx-1307934606.cos.ap-beijing.myqcloud.com/log.png
+    alt: pureadmin
+  actions:
+    - theme: brand
+      text: 开始
+      link: /guide/
+    - theme: alt
+      text: Github仓库
+      link: https://github.com/Hyk260/PureAdmin
+
+features:
+  - icon: 💡
+    title: 开箱即用
+    details: RBAC 模型 + JWT 权限控制
+  - icon: 🎨
+    title: 聊天工作室
+    details: 即时通信 (腾讯 IM sdk)
+  - icon: 📦
+    title: 代码规范
+    details: Prettier + ESLint 规范
+  - icon: 🛠️
+    title: electron
+    details: 支持 macOS、Windows 双平台
+  - icon: ✨
+    title: 语言切换
+    details: 国际化`vue-i18n` 支持 English, 简体中文
+  - icon: ⚙️
+    title: More
+    details: 更多功能开发中...
+---

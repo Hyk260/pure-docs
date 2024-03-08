@@ -1,0 +1,14 @@
+{
+  "name": "pure-docs",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "The documentation of PureAdmin",
+  "devDependencies": {
+    "vitepress": "^1.0.0-rc.31"
+  },
+  "scripts": {
+    "dev": "vitepress dev --port 308",
+    "build": "vitepress build",
+    "serve": "vitepress serve"
+  }
+}

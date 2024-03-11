@@ -82,6 +82,69 @@ https://www.typescriptlang.org/zh/tsconfig
 
 ```
 
+## electron 配置
+
+```
+pluginOptions: {
+  electronBuilder: {
+    // 主进程入口文件
+    mainProcessFile: "src/electron/main.js",
+    // 渲染进程也可以获取原生node包
+    nodeIntegration: true,
+    // 检测主进程文件在更改时将重新编译主进程并重新启动
+    mainProcessWatch: ["src/electron"],
+    // 预加载文件
+    preload: "src/electron/preload/index.js", // 预加载文件
+    // 打包配置
+    builderOptions: {
+      // 应用名称
+      productName: "PureAdmin",
+      // 安装包名称
+      artifactName: "PureAdmin_${version}.${ext}",
+      copyright: "PureAdmin",
+      // 应用更新服务器地址
+      publish: [
+        {
+          provider: "generic",
+          url: process.env.VUE_APP_UPDATE_SERVER_URL,
+        },
+      ],
+      win: {
+        target: ["nsis", "zip"],
+        icon: "images/log.png",
+      },
+      mac: {
+        icon: "images/log-512x512.png",
+      },
+      electronDownload: {
+        mirror: "https://npm.taobao.org/mirrors/electron/",
+      },
+      nsis: {
+        oneClick: false, // true: 一键安装 false: 辅助安装
+        perMachine: true, // false: 可选择为所有人或当前用户安装 true: 为所有人安装
+        allowElevation: true, // 是否允许请求提升（仅辅助安装程序）
+        allowToChangeInstallationDirectory: true, // 是否允许用户修改安装目录
+        createDesktopShortcut: true, // 是否创建桌面快捷方式
+        createStartMenuShortcut: true, // 是否创建开始菜单快捷方式
+        installerIcon: "images/icon.ico", // 安装图标
+        uninstallerIcon: "images/icon.ico", // 卸载图标
+        installerHeaderIcon: "images/icon.ico", // 安装时头部图标
+      },
+      asar: false, // 是否开启asar打包
+      //打包后拷贝静态文件到指定位置,
+      extraResources: [
+        {
+          from: "static",
+          to: "./",
+          filter: ["**/*"],
+        },
+      ],
+    },
+  },
+}
+
+```
+
 ## package.json
 
 ```

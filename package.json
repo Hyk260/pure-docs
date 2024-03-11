@@ -7,7 +7,7 @@
     "vitepress": "^1.0.0-rc.31"
   },
   "scripts": {
-    "dev": "vitepress dev --port 308",
+    "dev": "vitepress dev --host 0.0.0.0",
     "build": "vitepress build",
     "serve": "vitepress serve"
   }

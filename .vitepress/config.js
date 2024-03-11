@@ -6,24 +6,24 @@ import { qqSvg } from "../src/icon/qqSvg";
 export default defineConfig({
   lang: "zh-CN",
   title: "Pure Admin",
+  // https://vitepress.dev/zh/reference/site-config#base
   base: "/",
   // 页面的描述。
   description:
-    "基于 Vue3、Element-Plus 的中后台模版，提供了丰富的功能组件 聊天工作室 内置ChatGPT (腾讯 IM 即时通讯) 用于学习参考。",
-  // 允许自定义上次更新的文本和日期格式。
-  lastUpdated: {
-    text: "上次更新:",
-    formatOptions: {
-      dateStyle: "full",
-      timeStyle: "medium",
-    },
-  },
+    "基于 Vue3、Element-Plus 的中后台模版 聊天工作室 内置ChatGPT(腾讯IM即时通讯)用于学习参考.",
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
   ],
-  srcDir: path.join(process.cwd(), "src"),
   themeConfig: {
+    // 自定义上次更新的文本和日期格式。
+    lastUpdated: {
+      text: "上次更新",
+      formatOptions: {
+        dateStyle: "full",
+        timeStyle: "medium",
+      },
+    },
     // 导航栏上显示的 Logo，位于站点标题右侧。
     logo: "/favicon.png",
     socialLinks: [
@@ -35,9 +35,14 @@ export default defineConfig({
     ],
     nav: [
       { text: "介绍", link: "/guide/" },
+      { text: "常见问题", link: "/guide/other/FAQ" },
       {
-        text: "github仓库",
-        link: "https://github.com/Hyk260/PureAdmin",
+        text: "链接",
+        items: [
+          { text: "在线预览", link: "https://pureadmin.cn" },
+          { text: "gitee仓库", link: "https://gitee.com/H260788/PureAdmin" },
+          { text: "github仓库", link: "https://github.com/Hyk260/PureAdmin" },
+        ],
       },
     ],
     sidebar: [
@@ -68,8 +73,9 @@ export default defineConfig({
       provider: "local",
     },
   },
-  // 项目的构建输出位置，相对于项目根目录。
+  srcDir: path.join(process.cwd(), "src"),
+  // 项目的构建输出位置，相对于项目根目录
   outDir: path.join(process.cwd(), "dist"),
-  // 缓存文件的目录，相对于项目根目录。
+  // 缓存文件的目录，相对于项目根目录
   cacheDir: path.join(process.cwd(), "cache"),
 });

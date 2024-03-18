@@ -7,12 +7,12 @@ export default defineConfig({
   lang: "zh-CN",
   title: "Pure Admin",
   // https://vitepress.dev/zh/reference/site-config#base
-  base: "/",
+  base: "/pure-docs/", // /pure-docs/
   // 页面的描述。
   description:
     "基于 Vue3、Element-Plus 的中后台模版 聊天工作室 内置ChatGPT(腾讯IM即时通讯)用于学习参考.",
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["link", { rel: "icon", href: "./favicon.ico" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
   ],
   themeConfig: {
@@ -53,6 +53,7 @@ export default defineConfig({
           { text: "快速上手", link: "/guide/start" },
           { text: "项目配置", link: "/guide/config" },
           { text: "目录结构", link: "/guide/directory" },
+          { text: "提交规范", link: "/guide/commitlint" },
         ],
       },
       {

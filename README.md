@@ -1,2 +1,2 @@
 # pure-docs
-PureAdmin文档
+PureChat文档

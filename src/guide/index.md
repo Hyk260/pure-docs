@@ -1,12 +1,12 @@
 # 介绍
 
-[Pure-Admin](https://gitee.com/H260788/PureAdmin) 是基于 Vue3、Element-Plus 的中后台模版，提供了丰富的功能组件，聊天工作室(腾讯 IM 即时通讯)，内置ChatGPT，用于学习参考
+[PureChat](https://gitee.com/H260788/PureChat)是一个基于 Vue3、Element-Plus 的清新优雅的聊天工作室(腾讯 IM 即时通讯) 用于学习参考。
 
 ## 在线预览
 - [在线预览](https://pureadmin.cn)
 
 ## Electron 版本
-- [Electron 版本](https://gitee.com/H260788/PureAdmin/tree/electron/)
+- [Electron 版本](https://gitee.com/H260788/PureChat/tree/electron/)
 
 ## 特点
 - 🌚 光明/黑暗 模式主题切换`自动根据系统主题改变`

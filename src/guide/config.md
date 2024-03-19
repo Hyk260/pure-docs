@@ -15,7 +15,7 @@
 ## 具体配置
 
 ```
-# IM sdk日志级别 https://gitee.com/H260788/PureAdmin/blob/master/src/utils/IM/im-sdk/tim.js#L15
+# IM sdk日志级别 https://gitee.com/H260788/PureChat/blob/master/src/utils/IM/im-sdk/tim.js#L15
 VUE_APP_LOG_LEVEL = 3
 
 # 运行端口号
@@ -98,10 +98,10 @@ pluginOptions: {
     // 打包配置
     builderOptions: {
       // 应用名称
-      productName: "PureAdmin",
+      productName: "PureChat",
       // 安装包名称
-      artifactName: "PureAdmin_${version}.${ext}",
-      copyright: "PureAdmin",
+      artifactName: "PureChat_${version}.${ext}",
+      copyright: "PureChat",
       // 应用更新服务器地址
       publish: [
         {

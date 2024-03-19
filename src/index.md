@@ -1,22 +1,22 @@
 ---
 layout: home
 
-title: PureAdmin
-titleTemplate: 使用 vue3 + Element-Plus开发 用于学习参考
+title: PureChat
+titleTemplate: 文档
 
 hero:
-  name: PureAdmin
+  name: PureChat
   text: 使用 vue3 + Element-Plus开发 用于学习参考
   image:
     src: https://ljx-1307934606.cos.ap-beijing.myqcloud.com/log.png
-    alt: pureadmin
+    alt: PureChat
   actions:
     - theme: brand
       text: 开始
       link: /guide/
     - theme: alt
       text: Github仓库
-      link: https://github.com/Hyk260/PureAdmin
+      link: https://github.com/Hyk260/PureChat
 
 features:
   - icon: 💡

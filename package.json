@@ -1,8 +1,8 @@
 {
   "name": "pure-docs",
   "type": "module",
-  "version": "1.0.0",
-  "description": "The documentation of PureAdmin",
+  "version": "1.0.1",
+  "description": "The documentation of PureChat",
   "devDependencies": {
     "vitepress": "^1.0.0-rc.31"
   },

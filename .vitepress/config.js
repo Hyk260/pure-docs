@@ -5,12 +5,10 @@ import { qqSvg } from "../src/icon/qqSvg";
 
 export default defineConfig({
   lang: "zh-CN",
-  title: "Pure Admin",
+  title: "PureChat",
   // https://vitepress.dev/zh/reference/site-config#base
   base: "/pure-docs/", // /pure-docs/
-  // 页面的描述。
-  description:
-    "基于 Vue3、Element-Plus 的中后台模版 聊天工作室 内置ChatGPT(腾讯IM即时通讯)用于学习参考.",
+  description: "PureChat文档",
   head: [
     ["link", { rel: "icon", href: "./favicon.ico" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
@@ -27,7 +25,7 @@ export default defineConfig({
     // 导航栏上显示的 Logo，位于站点标题右侧。
     logo: "/favicon.png",
     socialLinks: [
-      { icon: "github", link: "https://github.com/Hyk260/PureAdmin" },
+      { icon: "github", link: "https://github.com/Hyk260/PureChat" },
       {
         icon: { svg: qqSvg },
         link: "https://jq.qq.com/?_wv=1027&k=Cd4Ihd2J",
@@ -40,8 +38,8 @@ export default defineConfig({
         text: "链接",
         items: [
           { text: "在线预览", link: "https://pureadmin.cn" },
-          { text: "gitee仓库", link: "https://gitee.com/H260788/PureAdmin" },
-          { text: "github仓库", link: "https://github.com/Hyk260/PureAdmin" },
+          { text: "gitee仓库", link: "https://gitee.com/H260788/PureChat" },
+          { text: "github仓库", link: "https://github.com/Hyk260/PureChat" },
         ],
       },
     ],

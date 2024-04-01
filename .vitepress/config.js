@@ -60,6 +60,7 @@ export default defineConfig({
         items: [
           { text: "技术网站", link: "/guide/other/recommendation" },
           { text: "常见问题", link: "/guide/other/FAQ" },
+          { text: "大语言模型指南", link: "/guide/other/model" },
         ],
       },
     ],

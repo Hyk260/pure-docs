@@ -6,7 +6,8 @@ titleTemplate: 文档
 
 hero:
   name: PureChat
-  text: 使用 vue3 + Element-Plus开发 用于学习参考
+  text: 聊天应用与开发框架
+  tagline: 基于 Vue3,Webpack5,Electron 开发
   image:
     src: https://ljx-1307934606.cos.ap-beijing.myqcloud.com/log.png
     alt: PureChat

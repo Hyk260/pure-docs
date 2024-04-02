@@ -1,10 +1,11 @@
 # 快速上手
 
-## node 版本要求
+## 环境准备
 
-```
- node 版本应不小于 16
-```
+确保你的环境满足以下要求
+
+- **git**: 你需要git来克隆和管理项目版本 [安装地址](https://git-scm.com/)
+- **nodejs**: >=16 或更高 [安装地址](https://nodejs.cn/)
 
 ## 拉取代码
 
@@ -19,6 +20,10 @@ git clone https://github.com/Hyk260/PureChat.git
 ```bash
 git clone https://gitee.com/H260788/PureChat.git
 ```
+
+::: warning 注意
+最新版本的代码以 github 为准。
+:::
 
 
 ## 本地开发

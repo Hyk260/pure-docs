@@ -1,9 +1,22 @@
 # 常见问题
 
+::: tip
+这里列举了一些常见的问题。如果没有找到可以在 [github issue](https://github.com/Hyk260/PureChat/issues) 反馈。
+:::
+
 ## 如何快速获得帮助？
 
 1. 询问 ChatGPT / Bing / 百度 / Google 等。
-2. 询问网友。请提供问题的背景信息和碰到问题的详细描述。高质量的提问容易获得有用的答案。
+
+| [Google](https://google.com) | [Bing](https://www.bing.com/) | ChatGPT | [StackoverFlow](https://stackoverflow.com/) |
+| ---------------------------- | ----------------------------- | -------- | ------------------------------------------- |
+
+2. 请提供问题的背景信息和碰到问题的详细描述，高质量的提问容易获得有用的答案。
+3. 在PureChat官方交流群里面提问，请尽量描述清楚问题，以便大家更好的帮助你
+
+## 禁止运行脚本报错
+[第一次执行脚本报错](https://blog.csdn.net/qq_39290878/article/details/109738433)
+
 
 ## 如何部署在 Vercel 上
 

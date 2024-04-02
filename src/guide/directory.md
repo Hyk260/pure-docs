@@ -13,6 +13,8 @@
 │   ├── components             // 全局公用组件
 │   ├── directives             // 自定义指令
 │   ├── electron               // electron配置
+│   ├── constants              // 常量
+│   ├── directives             // 指令
 │   ├── layout                 // 整体布局结构
 │   ├── plugins                // 插件
 │   ├── router                 // 路由

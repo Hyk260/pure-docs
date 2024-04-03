@@ -3,6 +3,19 @@ import process from "node:process";
 import path from "node:path";
 import { qqSvg } from "../src/icon/qqSvg";
 
+const Nav = [
+  { text: "介绍", link: "/guide/" },
+  { text: "常见问题", link: "/other/FAQ" },
+  {
+    text: "链接",
+    items: [
+      { text: "在线预览", link: "https://pureadmin.cn" },
+      { text: "gitee仓库", link: "https://gitee.com/H260788/PureChat" },
+      { text: "github仓库", link: "https://github.com/Hyk260/PureChat" },
+    ],
+  },
+];
+
 export default defineConfig({
   lang: "zh-CN",
   title: "PureChat",
@@ -11,7 +24,7 @@ export default defineConfig({
   description: "PureChat文档",
   head: [
     ["link", { rel: "icon", href: "./favicon.ico" }],
-    ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
+    // ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
   ],
   themeConfig: {
     // 自定义上次更新的文本和日期格式。
@@ -20,6 +33,14 @@ export default defineConfig({
       formatOptions: {
         dateStyle: "full",
         timeStyle: "medium",
+      },
+    },
+    // cleanUrls: true,
+    ignoreDeadLinks: [/^\/play/, /^\/interactive/, /:\/\/localhost/],
+    markdown: {
+      theme: {
+        light: "vitesse-light",
+        dark: "vitesse-dark",
       },
     },
     // 导航栏上显示的 Logo，位于站点标题右侧。
@@ -31,18 +52,7 @@ export default defineConfig({
         link: "https://jq.qq.com/?_wv=1027&k=Cd4Ihd2J",
       },
     ],
-    nav: [
-      { text: "介绍", link: "/guide/" },
-      { text: "常见问题", link: "/guide/other/FAQ" },
-      {
-        text: "链接",
-        items: [
-          { text: "在线预览", link: "https://pureadmin.cn" },
-          { text: "gitee仓库", link: "https://gitee.com/H260788/PureChat" },
-          { text: "github仓库", link: "https://github.com/Hyk260/PureChat" },
-        ],
-      },
-    ],
+    nav: Nav,
     sidebar: [
       {
         text: "前言",
@@ -58,9 +68,9 @@ export default defineConfig({
         text: "其他",
         collapsed: true,
         items: [
-          { text: "技术网站", link: "/guide/other/recommendation" },
-          { text: "常见问题", link: "/guide/other/FAQ" },
-          { text: "大语言模型指南", link: "/guide/other/model" },
+          { text: "技术网站", link: "/other/recommendation" },
+          { text: "常见问题", link: "/other/FAQ" },
+          { text: "大语言模型指南", link: "/other/model" },
         ],
       },
     ],

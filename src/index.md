@@ -2,12 +2,12 @@
 layout: home
 
 title: PureChat
-titleTemplate: 文档
+titleTemplate: docs
 
 hero:
   name: PureChat
   text: 聊天应用与开发框架
-  tagline: 基于 Vue3,Webpack5,Electron 开发
+  tagline: 基于Vue3,Webpack5,Electron开发
   image:
     src: https://ljx-1307934606.cos.ap-beijing.myqcloud.com/log.png
     alt: PureChat
@@ -22,7 +22,9 @@ hero:
 features:
   - icon: 💡
     title: 开箱即用
-    details: RBAC 模型 + JWT 权限控制
+    details: RBAC模型 + JWT权限控制
+    link: /guide/
+    linkText: 开始
   - icon: 🎨
     title: 聊天工作室
     details: 即时通信 (腾讯 IM sdk)
@@ -34,7 +36,7 @@ features:
     details: 支持 macOS、Windows 双平台
   - icon: ✨
     title: 语言切换
-    details: 国际化`vue-i18n` 支持 English, 简体中文
+    details: 国际化`vue-i18n`支持English,简体中文
   - icon: ⚙️
     title: More
     details: 更多功能开发中...

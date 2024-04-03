@@ -8,7 +8,7 @@
 
 1. 询问 ChatGPT / Bing / 百度 / Google 等。
 
-| [Google](https://google.com) | [Bing](https://www.bing.com/) | ChatGPT | [StackoverFlow](https://stackoverflow.com/) |
+| [Google](https://google.com) | [Bing](https://www.bing.com/) | ChatGPT  | [StackoverFlow](https://stackoverflow.com/) |
 | ---------------------------- | ----------------------------- | -------- | ------------------------------------------- |
 
 2. 请提供问题的背景信息和碰到问题的详细描述，高质量的提问容易获得有用的答案。

@@ -2,6 +2,7 @@
 import { h, watch } from "vue";
 import Theme from "vitepress/theme";
 
+import ContentIntegrations from './components/ContentIntegrations.vue';
 import layout from "./layout.vue";
 // import "./style/style.css";
 import './style/vars.css'
@@ -17,6 +18,7 @@ export default {
   },
   enhanceApp({ app, router }) {
     if (typeof window === "undefined") return;
+    app.component("ContentIntegrations", ContentIntegrations);
     watch(
       () => router.route.data.relativePath,
       () => updateHomePageStyle(location.pathname === "/"),

@@ -39,3 +39,8 @@
 - 文件下载进度
 - 窗口抖动
 
+<!-- ## 集成
+
+PureChat / tools:
+
+<ContentIntegrations /> -->

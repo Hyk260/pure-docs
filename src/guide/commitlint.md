@@ -26,7 +26,7 @@ description ： 主要内容
 | **chore**    | 其他变动                                              |
 | **release**  | 版本发布                                              |
 
-**3、例子**
+**3、例子**s
 
 ```
 git commit -m 'feat: 增加 xxx 功能'

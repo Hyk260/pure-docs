@@ -2,20 +2,17 @@
 
 ## 环境变量
 
-### 配置文件
-
 ```
 ├── .env                  # 基础环境变量配置文件（优先级最低）
 ├── .env.local            # 本地环境变量配置文件（优先级最高 会被git忽略）
 ├── .env.development      # 开发环境变量配置文件
 ├── .env.production       # 生产环境变量配置文件
-
 ```
 
 ## 具体配置
 
 ```
-# IM sdk日志级别 https://gitee.com/H260788/PureChat/blob/master/src/utils/IM/im-sdk/tim.js#L15
+# IM sdk日志级别
 VUE_APP_LOG_LEVEL = 3
 
 # 运行端口号
@@ -51,16 +48,17 @@ VUE_APP_UPDATE_SERVER_URL = "http://127.0.0.1:5500/"
 
 ```
 指定 npm 的仓库地址
-registry=https://registry.npmmirror.com/ 
+registry=https://registry.npmmirror.com/
 
-将共享的依赖项提升到项目根目录的 node_modules 文件夹中，以减小依赖树的大小 这可以减少重复的模块，提高性能
-shamefully-hoist=true 
+减小依赖树的大小 这可以减少重复的模块 提高性能
+shamefully-hoist=true
 ```
 
 ## jsconfig.json
+
 https://www.typescriptlang.org/zh/tsconfig
 
-```
+```json
 {
   "compilerOptions": {
     // 设置目标 ECMAScript 版本
@@ -70,7 +68,7 @@ https://www.typescriptlang.org/zh/tsconfig
     // 设置基础路径，用于解析非相对模块的根目录
     "baseUrl": ".",
     // 生成源映射文件
-    "sourceMap": true, 
+    "sourceMap": true,
     // 定义模块解析别名
     "paths": {
       "@/*": ["src/*"]
@@ -79,12 +77,11 @@ https://www.typescriptlang.org/zh/tsconfig
   "exclude": ["node_modules", "dist"],
   "include": ["src/**/*"]
 }
-
 ```
 
 ## electron 配置
 
-```
+```js
 pluginOptions: {
   electronBuilder: {
     // 主进程入口文件
@@ -142,25 +139,31 @@ pluginOptions: {
     },
   },
 }
-
 ```
 
 ## package.json
 
-```
+```json
 {
   "scripts": {
-    "serve": "vue-cli-service serve", // 启动
-    "build": "vue-cli-service build", // 打包（生产环境）
-    "build:dev": "vue-cli-service build --mode development", // 打包（测试环境）
-    "lint": "vue-cli-service lint --fix", // Eslint格式化并修复
-    "electron:serve": "vue-cli-service electron:serve", // electron 启动
-    "electron:build:mac": "vue-cli-service electron:build -p never -m", // electron 打包 mac
-    "electron:build:win": "vue-cli-service electron:build -p never -w", // electron 打包 window
-    "electron:build:dev:mac": "vue-cli-service electron:build --mode development --mac",
-    "electron:build:dev:win": "vue-cli-service electron:build --mode development --win",
-    "prepare": "husky install", // 生成husky
-    "report": "vue-cli-service serve --report" // 生成文件大小图形化分析
+    // 启动
+    "serve": "vue-cli-service serve",
+    // 打包（生产环境）
+    "build": "vue-cli-service build",
+    // 打包（测试环境）
+    "build:dev": "vue-cli-service build --mode development",
+    // Eslint格式化并修复
+    "lint": "vue-cli-service lint --fix",
+    // electron 启动
+    "electron:serve": "vue-cli-service electron:serve",
+    // electron 打包 mac
+    "electron:build:mac": "vue-cli-service electron:build -p never -m",
+    // electron 打包 window
+    "electron:build:win": "vue-cli-service electron:build -p never -w",
+    // 生成husky
+    "prepare": "husky install",
+    // 生成文件大小图形化分析
+    "report": "vue-cli-service serve --report"
   }
 }
 ```

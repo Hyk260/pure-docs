@@ -15,6 +15,27 @@ const Nav = [
     ],
   },
 ];
+const Sidebar = [
+  {
+    text: "前言",
+    items: [
+      { text: "介绍", link: "/guide/" },
+      { text: "快速上手", link: "/guide/start" },
+      { text: "项目配置", link: "/guide/config" },
+      { text: "目录结构", link: "/guide/directory" },
+      // { text: "提交规范", link: "/guide/commitlint" },
+    ],
+  },
+  {
+    text: "其他",
+    collapsed: true,
+    items: [
+      { text: "技术网站", link: "/other/recommendation" },
+      { text: "常见问题", link: "/other/FAQ" },
+      { text: "大语言模型指南", link: "/other/model" },
+    ],
+  },
+];
 
 export default defineConfig({
   lang: "zh-CN",
@@ -24,7 +45,7 @@ export default defineConfig({
   description: "PureChat文档",
   head: [
     ["link", { rel: "icon", href: "./favicon.ico" }],
-    // ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
+    ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
   ],
   themeConfig: {
     // 自定义上次更新的文本和日期格式。
@@ -53,27 +74,7 @@ export default defineConfig({
       },
     ],
     nav: Nav,
-    sidebar: [
-      {
-        text: "前言",
-        items: [
-          { text: "介绍", link: "/guide/" },
-          { text: "快速上手", link: "/guide/start" },
-          { text: "项目配置", link: "/guide/config" },
-          { text: "目录结构", link: "/guide/directory" },
-          { text: "提交规范", link: "/guide/commitlint" },
-        ],
-      },
-      {
-        text: "其他",
-        collapsed: true,
-        items: [
-          { text: "技术网站", link: "/other/recommendation" },
-          { text: "常见问题", link: "/other/FAQ" },
-          { text: "大语言模型指南", link: "/other/model" },
-        ],
-      },
-    ],
+    sidebar: Sidebar,
     // https://vitepress.dev/zh/reference/default-theme-footer#footer
     footer: {
       message: "Released under the MIT License.",

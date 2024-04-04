@@ -1,8 +1,3 @@
-<script setup>
-import { VPTeamMembers } from "vitepress/theme";
-import { teamMembers } from "../../contributors";
-</script>
-
 <template>
   <div class="content">
     <div class="content-container">
@@ -17,6 +12,11 @@ import { teamMembers } from "../../contributors";
     </div>
   </div>
 </template>
+
+<script setup>
+import { VPTeamMembers } from "vitepress/theme";
+import { teamMembers } from "../../contributors";
+</script>
 
 <style>
 .vp-doc {

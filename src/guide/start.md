@@ -9,29 +9,25 @@
 
 ## 拉取代码
 
-从 GitHub 上拉取
-
-```bash
-git clone https://github.com/Hyk260/PureChat.git
-```
-
-从 gitee 上拉取
-
-```bash
-git clone https://gitee.com/H260788/PureChat.git
-```
+::: code-group
+  ```bash [GitHub]
+  git clone https://github.com/Hyk260/PureChat.git
+  ```
+  ```bash [gitee]
+  git clone https://gitee.com/H260788/PureChat.git
+  ```
+:::
 
 ::: warning 注意
 最新版本的代码以 github 为准。
 :::
 
-
-## 本地开发
-
-本项目由 [node-admin](https://node-admin.cn) 提供 API，暂时因密钥安全后端源码暂时不公开， 测试可以使用线上地址
-本地启动需将后端地址切换成线上地址 baseURL: "https://node-admin.cn/"。
-[点我查看路径](https://gitee.com/H260788/PureChat/blob/master/src/utils/http/index.js#L10) 
+::: warning 本地开发需注意
+本项目由 [node-admin](https://node-admin.cn) 提供 API 暂时因密钥安全后端源码暂时不公开 测试可以使用线上地址.
+本地启动需将后端地址切换成线上地址 baseURL: "https://node-admin.cn/"
 暂时因密钥安全后端源码暂时不公开 测试使用线上地址
+[点我查看路径](https://gitee.com/H260788/PureChat/blob/master/src/utils/http/index.js#L10) 
+:::
 
 ## SVG 图标使用
 

@@ -28,9 +28,9 @@ const Sidebar = [
   },
   {
     text: "其他",
-    collapsed: true,
+    // collapsed: true,
     items: [
-      { text: "技术网站", link: "/other/recommendation" },
+      // { text: "技术网站", link: "/other/recommendation" },
       { text: "常见问题", link: "/other/FAQ" },
       { text: "大语言模型指南", link: "/other/model" },
     ],
@@ -86,7 +86,7 @@ export default defineConfig({
   },
   srcDir: path.join(process.cwd(), "src"),
   // 项目的构建输出位置，相对于项目根目录
-  outDir: path.join(process.cwd(), "dist"),
+  outDir: path.join(process.cwd(), "docs"),
   // 缓存文件的目录，相对于项目根目录
   cacheDir: path.join(process.cwd(), "cache"),
 });

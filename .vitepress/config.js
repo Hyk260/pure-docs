@@ -23,7 +23,7 @@ const Sidebar = [
       { text: "快速上手", link: "/guide/start" },
       { text: "项目配置", link: "/guide/config" },
       { text: "目录结构", link: "/guide/directory" },
-      // { text: "提交规范", link: "/guide/commitlint" },
+      { text: "提交规范", link: "/guide/commitlint" },
     ],
   },
   {
@@ -32,6 +32,7 @@ const Sidebar = [
     items: [
       // { text: "技术网站", link: "/other/recommendation" },
       { text: "常见问题", link: "/other/FAQ" },
+      { text: "更新日志", link: "/other/logs" },
       { text: "大语言模型指南", link: "/other/model" },
     ],
   },
@@ -45,7 +46,7 @@ export default defineConfig({
   description: "PureChat文档",
   head: [
     ["link", { rel: "icon", href: "./favicon.ico" }],
-    ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
+    // ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
   ],
   themeConfig: {
     // 自定义上次更新的文本和日期格式。
@@ -58,12 +59,12 @@ export default defineConfig({
     },
     // cleanUrls: true,
     ignoreDeadLinks: [/^\/play/, /^\/interactive/, /:\/\/localhost/],
-    markdown: {
-      theme: {
-        light: "vitesse-light",
-        dark: "vitesse-dark",
-      },
-    },
+    // markdown: {
+    //   theme: {
+    //     light: "vitesse-light",
+    //     dark: "vitesse-dark",
+    //   },
+    // },
     // 导航栏上显示的 Logo，位于站点标题右侧。
     logo: "/favicon.png",
     socialLinks: [

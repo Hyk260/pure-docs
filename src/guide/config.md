@@ -50,7 +50,7 @@ VUE_APP_UPDATE_SERVER_URL = "http://127.0.0.1:5500/"
 指定 npm 的仓库地址
 registry=https://registry.npmmirror.com/
 
-减小依赖树的大小 这可以减少重复的模块 提高性能
+将共享的依赖项提升到项目根目录的 node_modules 文件夹中，以减小依赖树的大小 这可以减少重复的模块，提高性能
 shamefully-hoist=true
 ```
 

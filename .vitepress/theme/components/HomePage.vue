@@ -18,7 +18,7 @@ import { VPTeamMembers } from "vitepress/theme";
 import { teamMembers } from "../../contributors";
 </script>
 
-<style>
+<style scoped>
 .vp-doc {
   display: flex;
   align-items: center;

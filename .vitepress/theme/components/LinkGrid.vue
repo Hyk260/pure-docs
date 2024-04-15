@@ -9,9 +9,9 @@ const props = defineProps({
 
 <template>
   <div class="wrap">
-    <a v-for="item of items" :key="item.name" class="link" :href="item.link">
-      <div v-if="item.icon.startsWith('i')" :class="item.icon" />
-      <img v-else :src="item.icon" />
+    <a v-for="item of items" :key="item.name" class="link" :href="item.link" target="_blank">
+      <!-- <div v-if="item.icon.startsWith('i')" :class="item.icon" />
+      <img v-else :src="item.icon" /> -->
       <span>{{ item.name }}</span>
       <span>{{ item.secondary }}</span>
     </a>

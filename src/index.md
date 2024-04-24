@@ -20,24 +20,24 @@ hero:
       link: https://github.com/Hyk260/PureChat
 
 features:
-  - icon: 💡
-    title: 开箱即用
-    details: RBAC模型 + JWT权限控制
-    link: /guide/
+  - icon: 🤖
+    title:  ChatGPT
+    details: openai语言模型
+    link: /other/model
     linkText: 开始
   - icon: 🎨
     title: 聊天工作室
     details: 即时通信 (腾讯 IM sdk)
-  - icon: 📦
-    title: 代码规范
-    details: Prettier + ESLint 规范
   - icon: 🛠️
     title: electron
     details: 支持 macOS、Windows 双平台
+  - icon: 💡
+    title: 开箱即用
+    details: RBAC模型 + JWT权限控制
+  - icon: 📦
+    title: 代码规范
+    details: Prettier + ESLint 规范
   - icon: ✨
     title: 语言切换
     details: 国际化`vue-i18n`支持English,简体中文
-  - icon: ⚙️
-    title: More
-    details: 更多功能开发中...
 ---

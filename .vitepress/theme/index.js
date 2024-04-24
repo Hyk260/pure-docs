@@ -2,12 +2,12 @@
 import { h, watch } from "vue";
 import Theme from "vitepress/theme";
 
-import ContentIntegrations from './components/ContentIntegrations.vue';
+import ContentIntegrations from "./components/ContentIntegrations.vue";
 import layout from "./layout.vue";
 // import "./style/style.css";
-import './style/vars.css'
-import './style/rainbow.css'
-import './style/overrides.css'
+import "./style/vars.css";
+import "./style/rainbow.css";
+import "./style/overrides.css";
 
 let homePageStyle = null;
 
@@ -16,7 +16,7 @@ export default {
   Layout() {
     return h(layout);
   },
-  enhanceApp({ app, router }) {
+  enhanceApp({ app, router, siteData }) {
     if (typeof window === "undefined") return;
     app.component("ContentIntegrations", ContentIntegrations);
     watch(

@@ -30,7 +30,7 @@ const Sidebar = [
     text: "其他",
     // collapsed: true,
     items: [
-      // { text: "技术网站", link: "/other/recommendation" },
+      { text: "技术网站", link: "/other/recommendation" },
       { text: "常见问题", link: "/other/FAQ" },
       { text: "更新日志", link: "/other/logs" },
       { text: "大语言模型指南", link: "/other/model" },

@@ -18,49 +18,48 @@
   ```
 :::
 
+## 选择包管理工具
+::: code-group
+  ```bash [npm]
+  https://www.npmrc.cn/
+  ```
+  ```bash [cnpm]
+  https://npmmirror.com/
+  ```
+  ```bash [yarn]
+  https://yarn.nodejs.cn/
+  ```
+  ```bash [pnpm]
+  https://www.pnpm.cn/
+  ```
+:::
+
 #### 安装依赖
 
 ```
-yarn install
+pnpm install
 ```
 
 #### 启动项目
 
 ```
-yarn serve
+pnpm dev
 ```
 
 #### 打包
 
 ```
-yarn build
+pnpm build
 ```
 
 ::: warning 注意
-最新版本的代码以 github 为准。
+最新版本的代码以github为准
 :::
 
 ::: warning 本地开发需注意
-本项目由 [node-admin](https://node-admin.cn) 提供 API 暂时因密钥安全后端源码暂时不公开 测试可以使用线上地址.
-本地启动需将后端地址切换成线上地址 baseURL: "https://node-admin.cn/"
-暂时因密钥安全后端源码暂时不公开 测试使用线上地址
-[点我查看路径](https://gitee.com/H260788/PureChat/blob/master/src/utils/http/index.js#L10) 
-:::
-
-## 包管理工具
-::: code-group
-  ```bash [npm]
-  npm i
-  ```
-  ```bash [cnpm]
-  cnpm i
-  ```
-  ```bash [yarn]
-  yarn i
-  ```
-  ```bash [pnpm]
-  pnpm i
-  ```
+本项目由 [pure-backend](https://github.com/Hyk260/pure-backend.git) 提供API 测试可以使用线上地址 
+本地启动需将后端地址切换成线上地址 baseURL: "https://apichat.fun/" 
+[代码路径](https://gitee.com/H260788/PureChat/blob/master/src/utils/http/index.js#L10) 
 :::
 
 ## SVG 图标使用

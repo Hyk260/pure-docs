@@ -1,4 +1,7 @@
-import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.BspCw6qa.js";const v=JSON.parse('{"title":"目录结构","description":"","frontmatter":{},"headers":[],"relativePath":"guide/directory.md","filePath":"guide/directory.md","lastUpdated":1712050529000}'),e={name:"guide/directory.md"},l=p(`<h1 id="目录结构" tabindex="-1">目录结构 <a class="header-anchor" href="#目录结构" aria-label="Permalink to &quot;目录结构&quot;">​</a></h1><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>├── .vscode                    // 编辑器配置</span></span>
+import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.BspCw6qa.js";const m=JSON.parse('{"title":"目录结构","description":"","frontmatter":{},"headers":[],"relativePath":"guide/directory.md","filePath":"guide/directory.md","lastUpdated":1715074813000}'),e={name:"guide/directory.md"},l=p(`<h1 id="目录结构" tabindex="-1">目录结构 <a class="header-anchor" href="#目录结构" aria-label="Permalink to &quot;目录结构&quot;">​</a></h1><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>PureChat</span></span>
+<span class="line"><span>├── .vscode                    // vscode插件和设置</span></span>
+<span class="line"><span>│   ├── extensions.json        // vscode推荐的插件(左侧点击扩展 筛选选中推荐可以一键安装)</span></span>
+<span class="line"><span>│   └── settings.json          // vscode配置(在该项目中生效 可以复制到用户配置文件中)</span></span>
 <span class="line"><span>├── dist_electron              // electron打包文件</span></span>
 <span class="line"><span>├── dist                       // 打包文件</span></span>
 <span class="line"><span>├── locales                    // 国际化语言包</span></span>
@@ -40,4 +43,4 @@ import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.BspCw6qa.js";const v
 <span class="line"><span>├── package.json               // 项目名称 项目版本 项目描述 项目运行的一些脚本(依赖)</span></span>
 <span class="line"><span>├── prettier.config.js         // prettier配置</span></span>
 <span class="line"><span>├── README.md                  // 说明</span></span>
-<span class="line"><span>└── vue.config.js              // vue配置文件</span></span></code></pre></div>`,2),i=[l];function c(t,o,r,d,_,m){return a(),n("div",null,i)}const g=s(e,[["render",c]]);export{v as __pageData,g as default};
+<span class="line"><span>└── vue.config.js              // vue配置文件</span></span></code></pre></div>`,2),i=[l];function c(t,o,r,d,_,u){return a(),n("div",null,i)}const g=s(e,[["render",c]]);export{m as __pageData,g as default};

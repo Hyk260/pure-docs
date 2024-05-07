@@ -147,7 +147,7 @@ pluginOptions: {
 {
   "scripts": {
     // 启动
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     // 打包（生产环境）
     "build": "vue-cli-service build",
     // 打包（测试环境）

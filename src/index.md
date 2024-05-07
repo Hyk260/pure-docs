@@ -22,7 +22,7 @@ hero:
 features:
   - icon: 🤖
     title:  ChatGPT
-    details: openai语言模型
+    details: openai 语言模型
     link: /other/model
     linkText: 开始
   - icon: 🎨
@@ -30,7 +30,7 @@ features:
     details: 即时通信 (腾讯 IM sdk)
   - icon: 🛠️
     title: electron
-    details: 支持 macOS、Windows 双平台
+    details: 支持 macOS(.dmg)、Windows(.exe) 双平台
   - icon: 💡
     title: 开箱即用
     details: RBAC模型 + JWT权限控制

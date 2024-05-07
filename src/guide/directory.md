@@ -1,7 +1,10 @@
 # 目录结构
 
 ```
-├── .vscode                    // 编辑器配置
+PureChat
+├── .vscode                    // vscode插件和设置
+│   ├── extensions.json        // vscode推荐的插件(左侧点击扩展 筛选选中推荐可以一键安装)
+│   └── settings.json          // vscode配置(在该项目中生效 可以复制到用户配置文件中)
 ├── dist_electron              // electron打包文件
 ├── dist                       // 打包文件
 ├── locales                    // 国际化语言包

@@ -1,13 +1,15 @@
 // https://vitepress.dev/guide/custom-theme
-import { h, watch } from "vue";
 import Theme from "vitepress/theme";
+import { h, watch } from "vue";
 
+import Callout from "./components/Callout.vue";
 import ContentIntegrations from "./components/ContentIntegrations.vue";
+
 import layout from "./layout.vue";
 // import "./style/style.css";
-import "./style/vars.css";
-import "./style/rainbow.css";
 import "./style/overrides.css";
+import "./style/rainbow.css";
+import "./style/vars.css";
 
 let homePageStyle = null;
 
@@ -18,6 +20,7 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     if (typeof window === "undefined") return;
+    app.component("Callout", Callout);
     app.component("ContentIntegrations", ContentIntegrations);
     watch(
       () => router.route.data.relativePath,

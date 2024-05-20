@@ -1,10 +1,10 @@
-import { defineConfig } from "vitepress";
-import process from "node:process";
 import path from "node:path";
+import process from "node:process";
+import { defineConfig } from "vitepress";
 import { qqSvg } from "../src/icon/qqSvg";
 
 const Nav = [
-  { text: "介绍", link: "/guide/" },
+  { text: "介绍", link: "/preface/" },
   { text: "常见问题", link: "/other/FAQ" },
   {
     text: "链接",
@@ -19,11 +19,11 @@ const Sidebar = [
   {
     text: "前言",
     items: [
-      { text: "介绍", link: "/guide/" },
-      { text: "快速上手", link: "/guide/start" },
-      { text: "项目配置", link: "/guide/config" },
-      { text: "目录结构", link: "/guide/directory" },
-      { text: "提交规范", link: "/guide/commitlint" },
+      { text: "介绍", link: "/preface/" },
+      { text: "快速上手", link: "/preface/start" },
+      { text: "项目配置", link: "/preface/config" },
+      { text: "目录结构", link: "/preface/directory" },
+      { text: "提交规范", link: "/preface/commitlint" },
     ],
   },
   {
@@ -33,7 +33,13 @@ const Sidebar = [
       { text: "技术网站", link: "/other/recommendation" },
       { text: "常见问题", link: "/other/FAQ" },
       { text: "更新日志", link: "/other/logs" },
-      { text: "大语言模型指南", link: "/other/model" },
+    ],
+  },
+  {
+    text: "AI指南",
+    items: [
+      { text: "大语言模型指南", link: "/guides/model" },
+      { text: "提示词指南", link: "/guides/prompts" }
     ],
   },
 ];
@@ -46,6 +52,7 @@ export default defineConfig({
   description: "PureChat文档",
   head: [
     ["link", { rel: "icon", href: "./favicon.ico" }],
+    ['meta', { name: 'author', content: 'yongkang' }],
     // ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
   ],
   themeConfig: {

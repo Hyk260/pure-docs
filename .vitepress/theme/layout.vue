@@ -1,8 +1,8 @@
 <script setup>
-import { nextTick, provide } from 'vue'
-import { useData } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
-import HomePage from './components/HomePage.vue'
+import { useData } from 'vitepress';
+import DefaultTheme from 'vitepress/theme';
+import { nextTick, provide } from 'vue';
+import HomePage from './components/HomePage.vue';
 
 const { isDark } = useData()
 

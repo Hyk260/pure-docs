@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /guide/
+      link: /preface/
     - theme: alt
       text: Github仓库
       link: https://github.com/Hyk260/PureChat

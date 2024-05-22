@@ -11,6 +11,7 @@ PureChat
 ├── node_modules               // 依赖包
 ├── public                     // 静态目录
 ├── src                        // 源代码
+│   ├── ai                     // ai配置 openai
 │   ├── api                    // 所有请求
 │   ├── assets                 // 主题字体图片 svg icons 等静态资源
 │   ├── components             // 全局公用组件

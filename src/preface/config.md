@@ -28,7 +28,7 @@ VUE_APP_PUBLIC_PATH = /
 VUE_APP_ROUTER_HISTORY = "hash"
 
 # 接口地址
-VUE_APP_PROXY_DOMAIN_REAL = "https://node-admin.cn/"
+VUE_APP_PROXY_DOMAIN_REAL = ""
 
 # IM SDKAppID
 VUE_APP_SDK_APPID = ""
@@ -37,10 +37,10 @@ VUE_APP_SDK_APPID = ""
 VUE_APP_OPENAI_API_KEY = ""
 
 # openai api 默认url (可选)
-VUE_APP_BASE_URL = "https://api.nextapi.fun/openai/"
+VUE_APP_BASE_URL = ""
 
 # electron 更新地址
-VUE_APP_UPDATE_SERVER_URL = "http://127.0.0.1:5500/"
+VUE_APP_UPDATE_SERVER_URL = ""
 
 ```
 

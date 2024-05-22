@@ -23,7 +23,7 @@ features:
   - icon: 🤖
     title:  ChatGPT
     details: openai 语言模型
-    link: /other/model
+    link: /guides/model
     linkText: 开始
   - icon: 🎨
     title: 聊天工作室

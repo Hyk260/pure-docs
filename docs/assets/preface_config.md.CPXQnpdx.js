@@ -1,4 +1,4 @@
-import{_ as s,c as i,o as a,a5 as n}from"./chunks/framework.Bx0JrJuv.js";const g=JSON.parse('{"title":"项目配置","description":"","frontmatter":{},"headers":[],"relativePath":"preface/config.md","filePath":"preface/config.md","lastUpdated":1716183374000}'),p={name:"preface/config.md"},l=n(`<h1 id="项目配置" tabindex="-1">项目配置 <a class="header-anchor" href="#项目配置" aria-label="Permalink to &quot;项目配置&quot;">​</a></h1><h2 id="环境变量" tabindex="-1">环境变量 <a class="header-anchor" href="#环境变量" aria-label="Permalink to &quot;环境变量&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>├── .env                  # 基础环境变量配置文件（优先级最低）</span></span>
+import{_ as s,c as i,o as a,a5 as n}from"./chunks/framework.Bx0JrJuv.js";const g=JSON.parse('{"title":"项目配置","description":"","frontmatter":{},"headers":[],"relativePath":"preface/config.md","filePath":"preface/config.md","lastUpdated":1716346017000}'),p={name:"preface/config.md"},l=n(`<h1 id="项目配置" tabindex="-1">项目配置 <a class="header-anchor" href="#项目配置" aria-label="Permalink to &quot;项目配置&quot;">​</a></h1><h2 id="环境变量" tabindex="-1">环境变量 <a class="header-anchor" href="#环境变量" aria-label="Permalink to &quot;环境变量&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>├── .env                  # 基础环境变量配置文件（优先级最低）</span></span>
 <span class="line"><span>├── .env.local            # 本地环境变量配置文件（优先级最高 会被git忽略）</span></span>
 <span class="line"><span>├── .env.development      # 开发环境变量配置文件</span></span>
 <span class="line"><span>├── .env.production       # 生产环境变量配置文件</span></span></code></pre></div><h2 id="具体配置" tabindex="-1">具体配置 <a class="header-anchor" href="#具体配置" aria-label="Permalink to &quot;具体配置&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span># IM sdk日志级别</span></span>
@@ -17,7 +17,7 @@ import{_ as s,c as i,o as a,a5 as n}from"./chunks/framework.Bx0JrJuv.js";const g
 <span class="line"><span>VUE_APP_ROUTER_HISTORY = &quot;hash&quot;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># 接口地址</span></span>
-<span class="line"><span>VUE_APP_PROXY_DOMAIN_REAL = &quot;https://node-admin.cn/&quot;</span></span>
+<span class="line"><span>VUE_APP_PROXY_DOMAIN_REAL = &quot;&quot;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># IM SDKAppID</span></span>
 <span class="line"><span>VUE_APP_SDK_APPID = &quot;&quot;</span></span>
@@ -26,10 +26,10 @@ import{_ as s,c as i,o as a,a5 as n}from"./chunks/framework.Bx0JrJuv.js";const g
 <span class="line"><span>VUE_APP_OPENAI_API_KEY = &quot;&quot;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># openai api 默认url (可选)</span></span>
-<span class="line"><span>VUE_APP_BASE_URL = &quot;https://api.nextapi.fun/openai/&quot;</span></span>
+<span class="line"><span>VUE_APP_BASE_URL = &quot;&quot;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># electron 更新地址</span></span>
-<span class="line"><span>VUE_APP_UPDATE_SERVER_URL = &quot;http://127.0.0.1:5500/&quot;</span></span></code></pre></div><h2 id="npmrc" tabindex="-1">.npmrc <a class="header-anchor" href="#npmrc" aria-label="Permalink to &quot;.npmrc&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>指定 npm 的仓库地址</span></span>
+<span class="line"><span>VUE_APP_UPDATE_SERVER_URL = &quot;&quot;</span></span></code></pre></div><h2 id="npmrc" tabindex="-1">.npmrc <a class="header-anchor" href="#npmrc" aria-label="Permalink to &quot;.npmrc&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>指定 npm 的仓库地址</span></span>
 <span class="line"><span>registry=https://registry.npmmirror.com/</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span>将共享的依赖项提升到项目根目录的 node_modules 文件夹中，以减小依赖树的大小 这可以减少重复的模块，提高性能</span></span>

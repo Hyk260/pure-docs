@@ -1,4 +1,4 @@
----
+<!-- ---
 title: ChatGPT 模型指南：参数概念与应用
 description:  了解 ChatGPT 模型的不同版本及参数概念，包括 temperature、top_p、presence_penalty 和 frequency_penalty。
 tags:
@@ -7,7 +7,7 @@ tags:
   - 参数概念
   - LLM
   - 生成模型
----
+--- -->
 
 # 模型指南
 

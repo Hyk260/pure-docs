@@ -13,7 +13,7 @@ function createLinks(tm) {
     });
   }
   if (tm.discord) tm.links.push({ icon: "discord", link: tm.discord });
-  tm.links.push({ icon: "twitter", link: `https://twitter.com/${tm.twitter}` });
+  // tm.links.push({ icon: "twitter", link: `https://twitter.com/${tm.twitter}` });
   return tm;
 }
 
@@ -22,7 +22,7 @@ const plainTeamMembers = [
     avatar: "./Hyk260.png",
     name: "yongkang",
     github: "Hyk260",
-    twitter: "",
+    // twitter: "",
     sponsor: "https://github.com/sponsors/Hyk260",
     title: "",
     org: "",
@@ -33,3 +33,4 @@ const plainTeamMembers = [
 const teamMembers = plainTeamMembers.map((tm) => createLinks(tm));
 
 export { teamMembers };
+

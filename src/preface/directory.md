@@ -47,6 +47,6 @@ PureChat
 ├── package.json               // 项目名称 项目版本 项目描述 项目运行的一些脚本(依赖)
 ├── prettier.config.js         // prettier配置
 ├── README.md                  // 说明
-└── vue.config.js              // vue配置文件
+└── vite.config.js             // vite配置
 ```
 

@@ -147,23 +147,13 @@ pluginOptions: {
 {
   "scripts": {
     // 启动
-    "dev": "vue-cli-service serve",
+    "dev": "vite",
     // 打包（生产环境）
-    "build": "vue-cli-service build",
+    "build": "vite build",
     // 打包（测试环境）
-    "build:dev": "vue-cli-service build --mode development",
-    // Eslint格式化并修复
-    "lint": "vue-cli-service lint --fix",
-    // electron 启动
-    "electron:serve": "vue-cli-service electron:serve",
-    // electron 打包 mac
-    "electron:build:mac": "vue-cli-service electron:build -p never -m",
-    // electron 打包 window
-    "electron:build:win": "vue-cli-service electron:build -p never -w",
-    // 生成husky
-    "prepare": "husky install",
-    // 生成文件大小图形化分析
-    "report": "vue-cli-service serve --report"
+    "build:dev": "vite build --mode development",
+    // 本地环境预览构建后的dist
+    "preview": "vite preview",
   }
 }
 ```

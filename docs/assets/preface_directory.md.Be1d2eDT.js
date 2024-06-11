@@ -44,4 +44,4 @@ import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.Bx0JrJuv.js";const u
 <span class="line"><span>├── package.json               // 项目名称 项目版本 项目描述 项目运行的一些脚本(依赖)</span></span>
 <span class="line"><span>├── prettier.config.js         // prettier配置</span></span>
 <span class="line"><span>├── README.md                  // 说明</span></span>
-<span class="line"><span>└── vue.config.js              // vue配置文件</span></span></code></pre></div>`,2),i=[l];function c(t,o,r,d,_,v){return a(),n("div",null,i)}const g=s(e,[["render",c]]);export{u as __pageData,g as default};
+<span class="line"><span>└── vite.config.js             // vite配置</span></span></code></pre></div>`,2),i=[l];function c(t,o,r,d,_,v){return a(),n("div",null,i)}const g=s(e,[["render",c]]);export{u as __pageData,g as default};

@@ -6,8 +6,8 @@ titleTemplate: docs
 
 hero:
   name: PureChat
-  text: 聊天应用与开发框架
-  tagline: 基于Vue3,Webpack5,Electron开发
+  text: 聊天应用与AI开发框架
+  tagline: 基于Vue3,Vite5开发
   image:
     src: https://ljx-1307934606.cos.ap-beijing.myqcloud.com/log.png
     alt: PureChat

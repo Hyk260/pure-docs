@@ -8,7 +8,7 @@ PureChat 是一款基于前沿技术构建的聊天工作室，它以 Vue3 为�
 
 ## Electron 版本
 
-- [Electron 版本](https://gitee.com/H260788/PureChat/tree/electron/)
+- [Electron 版本](https://gitee.com/H260788/pure-chat-app)
 
 ## SDK
 

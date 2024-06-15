@@ -1,5 +1,6 @@
 export const integrations = [
   { name: "Vue", link: "https://cn.vuejs.org", icon: "" },
+  { name: "Vite", link: "https://cn.vitejs.dev", icon: "" },
   {
     name: "ElementPlus",
     link: "https://element-plus.org",

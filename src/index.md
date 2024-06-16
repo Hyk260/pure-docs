@@ -37,5 +37,5 @@ features:
     details: Prettier + ESLint 规范
   - icon: 🔄
     title: 语言切换
-    details: 国际化`vue-i18n`支持English,简体中文
+    details: 支持English,简体中文
 ---

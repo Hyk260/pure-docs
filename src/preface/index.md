@@ -16,12 +16,16 @@ PureChat 是一款基于前沿技术构建的聊天工作室，它以 Vue3 为�
 
 ## 特点
 
+- 📦️ 使用 Vite5 构建
+- 📃 RBAC 模型 + JWT 权限控制
+- 🤖 接入 openai 语言模型
+- ☁️ 聊天工作室 `基于IM即时通讯sdk`
 - 🌚 光明/黑暗 模式主题切换`自动根据系统主题改变`
-- ⚡️ 自定义 SVG 图标组件`svg-sprite-loader`
-- 🔴 国际化`vue-i18n` 支持 English, 简体中文
+- ⚡️ 自定义 SVG 图标组件
+- 🔴 国际化支持 English, 简体中文
 - 🔧 Prettier + ESLint 规范
-- 💡 Commitlint 提交规范
-- ✨ electron 版本 支持 macOS、Windows 双平台
+- 🛡️ GitHub快速登录享受无缝的社交体验
+- ✨ 提供桌面应用electron版本 支持 macOS(.dmg)、Windows(.exe)双平台
 - 🛠 更多特性开发中
 
 ## Web

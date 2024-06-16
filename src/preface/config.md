@@ -12,35 +12,62 @@
 ## 具体配置
 
 ```
-# IM sdk日志级别
-VUE_APP_LOG_LEVEL = 3
+# 本地运行端口号
+VITE_PORT = '8080'
 
-# 运行端口号
-VUE_APP_PORT = 8080
+# 项目名称
+VITE_APP_NAME = 'PureChat'
 
-# 代理
-VUE_APP_PROXY = 'false'
+# http代理
+VITE_HTTP_PROXY = 'N'
 
-# 打包路径
-VUE_APP_PUBLIC_PATH = /
+# 是否开启pwa
+VITE_PWA = 'Y'
 
-# 路由历史模式 (项目中测试环境使用"history" 生产环境使用"hash")
-VUE_APP_ROUTER_HISTORY = "hash"
+# 是否是部署的vercel
+VITE_VERCEL = 'Y'
 
-# 接口地址
-VUE_APP_PROXY_DOMAIN_REAL = ""
+# 是否在打包时使用cdn替换本地库
+VITE_CDN = "N"
 
-# IM SDKAppID
-VUE_APP_SDK_APPID = ""
+# 是否生成生产源映射
+VITE_SOURCE_MAP = 'N'
 
-# 您的openai api密钥(必需)
-VUE_APP_OPENAI_API_KEY = ""
+# 开发环境读取配置文件路径
+VITE_BASE_URL = '/'
 
-# openai api 默认url (可选)
-VUE_APP_BASE_URL = ""
+# 腾讯IM SDKAppID https://cloud.tencent.com/product/im
+VITE_SDK_APPID = ''
 
-# electron 更新地址
-VUE_APP_UPDATE_SERVER_URL = ""
+# 您的openai api密钥 (必须)
+VITE_OPENAI_API_KEY = ''
+
+# openai api 地址 (可选)
+VITE_OPENAI_BASE_URL = 'https://api.nextapi.fun/'
+
+# 智谱 api key
+VITE_ZHIPU_API_KEY = ''
+
+# 智谱 api 地址 (可选)
+VITE_ZHIPU_BASE_URL = 'https://open.bigmodel.cn/api/paas/v4/'
+
+# 零一万物 api key
+VITE_ZEROONE_API_KEY = ''
+
+# 零一万物 api 地址 (可选)
+VITE_ZEROONE_BASE_URL = 'https://api.lingyiwanwu.com/'
+
+# chatgpt机器人ID (必须)
+VITE_ROBOT_GPT = '@RBT#001'
+
+# 智谱机器人ID (必须)
+VITE_ROBOT_GLM = '@RBT#002'
+
+# 零一万物机器人ID (必须)
+VITE_ROBOT_ZEROONE = '@RBT#003'
+
+# cloud 对象存储url
+VITE_CLOUD_BASE_URL = 'https://ljx-1307934606.cos.ap-beijing.myqcloud.com/'
 
 ```
 
@@ -76,68 +103,6 @@ https://www.typescriptlang.org/zh/tsconfig
   },
   "exclude": ["node_modules", "dist"],
   "include": ["src/**/*"]
-}
-```
-
-## electron 配置
-
-```js
-pluginOptions: {
-  electronBuilder: {
-    // 主进程入口文件
-    mainProcessFile: "src/electron/main.js",
-    // 渲染进程也可以获取原生node包
-    nodeIntegration: true,
-    // 检测主进程文件在更改时将重新编译主进程并重新启动
-    mainProcessWatch: ["src/electron"],
-    // 预加载文件
-    preload: "src/electron/preload/index.js", // 预加载文件
-    // 打包配置
-    builderOptions: {
-      // 应用名称
-      productName: "PureChat",
-      // 安装包名称
-      artifactName: "PureChat_${version}.${ext}",
-      copyright: "PureChat",
-      // 应用更新服务器地址
-      publish: [
-        {
-          provider: "generic",
-          url: process.env.VUE_APP_UPDATE_SERVER_URL,
-        },
-      ],
-      win: {
-        target: ["nsis", "zip"],
-        icon: "images/log.png",
-      },
-      mac: {
-        icon: "images/log-512x512.png",
-      },
-      electronDownload: {
-        mirror: "https://npm.taobao.org/mirrors/electron/",
-      },
-      nsis: {
-        oneClick: false, // true: 一键安装 false: 辅助安装
-        perMachine: true, // false: 可选择为所有人或当前用户安装 true: 为所有人安装
-        allowElevation: true, // 是否允许请求提升（仅辅助安装程序）
-        allowToChangeInstallationDirectory: true, // 是否允许用户修改安装目录
-        createDesktopShortcut: true, // 是否创建桌面快捷方式
-        createStartMenuShortcut: true, // 是否创建开始菜单快捷方式
-        installerIcon: "images/icon.ico", // 安装图标
-        uninstallerIcon: "images/icon.ico", // 卸载图标
-        installerHeaderIcon: "images/icon.ico", // 安装时头部图标
-      },
-      asar: false, // 是否开启asar打包
-      //打包后拷贝静态文件到指定位置,
-      extraResources: [
-        {
-          from: "static",
-          to: "./",
-          filter: ["**/*"],
-        },
-      ],
-    },
-  },
 }
 ```
 

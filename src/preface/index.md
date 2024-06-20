@@ -28,6 +28,9 @@ PureChat 是一款基于前沿技术构建的聊天工作室，它以 Vue3 为�
 - ✨ 提供桌面应用electron版本 支持 macOS(.dmg)、Windows(.exe)双平台
 - 🛠 更多特性开发中
 
+## 分支
+main为主分支 基于`Vite5`构建， master分支基于`Vue CLI5`构建
+
 ## Web
 ### @成员功能
 - 支持通过拼音模糊搜索快速@群成员，提高群聊沟通效率。

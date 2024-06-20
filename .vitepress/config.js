@@ -33,6 +33,7 @@ const Sidebar = [
       { text: "技术网站", link: "/other/recommendation" },
       { text: "常见问题", link: "/other/FAQ" },
       { text: "更新日志", link: "/other/logs" },
+      { text: "私有化部署", link: "/other/deploy" },
     ],
   },
   {

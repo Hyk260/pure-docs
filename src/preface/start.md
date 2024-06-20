@@ -5,7 +5,7 @@
 确保你的环境满足以下要求
 
 - **git**: 你需要git来克隆和管理项目版本 [安装地址](https://git-scm.com/)
-- **nodejs**: >=16 或更高 [安装地址](https://nodejs.cn/)
+- **nodejs**: >=18 或更高 [安装地址](https://nodejs.cn/)
 
 ## VSCode插件
 

@@ -14,9 +14,18 @@
 2. 请提供问题的背景信息和碰到问题的详细描述，高质量的提问容易获得有用的答案。
 3. 在PureChat官方交流群里面提问，请尽量描述清楚问题，以便大家更好的帮助你
 
-## 禁止运行脚本报错
-[第一次执行脚本报错](https://blog.csdn.net/qq_39290878/article/details/109738433)
+## VScode (因为在此系统上禁止运行脚本)报错
+[第一次执行脚本报错](https://cloud.tencent.com/developer/article/1746884)
 
+## 如何获取腾讯im appid 和 appkey？
+
+1. 登录 [腾讯云](https://cloud.tencent.com/)，注册腾讯云账号
+2. 登录 [即时通信 IM](https://console.cloud.tencent.com/im) 控制台，创建应用
+3. 获取 appid 和 appkey
+
+<img src="../public/images/im-1.png">
+
+<img src="../public/images/im-2.png">
 
 ## 如何部署在 Vercel 上
 

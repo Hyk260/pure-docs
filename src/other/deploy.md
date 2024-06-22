@@ -15,7 +15,6 @@
 `VITE_OPENAI_API_KEY` （OpenAI API Key）
 `VITE_SDK_APPID`（腾讯IM sdkappid）
 `VITE_SDK_KEY`（腾讯IM sdk密钥）
-`VITE_NO_SERVICE`（必填）
 
 ### 部署完毕后，即可开始使用
 

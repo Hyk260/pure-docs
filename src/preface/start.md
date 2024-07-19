@@ -2,10 +2,9 @@
 
 ## 环境准备
 
-确保你的环境满足以下要求
-
-- **git**: 你需要git来克隆和管理项目版本 [安装地址](https://git-scm.com/)
-- **nodejs**: >=18 或更高 [安装地址](https://nodejs.cn/)
+::: warning 前提条件
+ Node.js 版本 18.20+
+:::
 
 ## VSCode插件
 
@@ -46,9 +45,6 @@
 ::: code-group
   ```bash [npm]
   https://www.npmrc.cn/
-  ```
-  ```bash [cnpm]
-  https://npmmirror.com/
   ```
   ```bash [yarn]
   https://yarn.nodejs.cn/

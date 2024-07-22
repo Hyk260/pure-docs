@@ -7,6 +7,7 @@ PureChat
 │   └── settings.json          // vscode配置(在该项目中生效 可以复制到用户配置文件中)
 ├── dist_electron              // electron打包文件
 ├── dist                       // 打包文件
+├── electron                   // electron配置
 ├── locales                    // 国际化语言包
 ├── node_modules               // 依赖包
 ├── public                     // 静态目录
@@ -16,7 +17,6 @@ PureChat
 │   ├── assets                 // 主题字体图片 svg icons 等静态资源
 │   ├── components             // 全局公用组件
 │   ├── directives             // 自定义指令
-│   ├── electron               // electron配置
 │   ├── constants              // 常量
 │   ├── directives             // 指令
 │   ├── layout                 // 整体布局结构

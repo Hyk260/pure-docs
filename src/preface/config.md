@@ -22,13 +22,16 @@ VITE_APP_NAME = 'PureChat'
 VITE_HTTP_PROXY = 'N'
 
 # 是否开启pwa
-VITE_PWA = 'Y'
+VITE_PWA = 'N'
 
-# 是否是部署的vercel
+# 是否部署至vercel
 VITE_VERCEL = 'Y'
 
 # 是否在打包时使用cdn替换本地库
 VITE_CDN = "N"
+
+# 无服务器模式 (无需后端接口输入用户名即可登录)
+VITE_NO_SERVICE = "N"
 
 # 是否生成生产源映射
 VITE_SOURCE_MAP = 'N'
@@ -36,14 +39,17 @@ VITE_SOURCE_MAP = 'N'
 # 开发环境读取配置文件路径
 VITE_BASE_URL = '/'
 
-# 腾讯IM SDKAppID https://cloud.tencent.com/product/im
-VITE_SDK_APPID = ''
+# 腾讯IM SDKAppID https://cloud.tencent.com/product/im (必须)
+VITE_IM_SDK_APPID = '1600010416'
 
-# 您的openai api密钥 (必须)
-VITE_OPENAI_API_KEY = ''
+# 腾讯IM密钥 密钥信息为敏感信息，请注意保密，不要泄露。(必须)(VITE_NO_SERVICE 为'Y'生效)
+VITE_IM_SDK_KEY = ''
+
+# openai api key (必须)
+VITE_OPENAI_API_KEY = 'ak-a9bMv3tuBaei8i3HJ5U8AwVgcHfuG2Tufu1NXoh026rJtn31'
 
 # openai api 地址 (可选)
-VITE_OPENAI_BASE_URL = 'https://api.nextapi.fun/'
+VITE_OPENAI_PROXY_URL = 'https://api.nextapi.fun/'
 
 # 智谱 api key
 VITE_ZHIPU_API_KEY = ''
@@ -57,6 +63,12 @@ VITE_ZEROONE_API_KEY = ''
 # 零一万物 api 地址 (可选)
 VITE_ZEROONE_BASE_URL = 'https://api.lingyiwanwu.com/'
 
+# 通义千问 api key
+VITE_QWEN_API_KEY = ''
+
+# 通义千问 api 地址 (可选)
+VITE_QWEN_BASE_URL = 'https://dashscope.aliyuncs.com/api/v1/'
+
 # chatgpt机器人ID (必须)
 VITE_ROBOT_GPT = '@RBT#001'
 
@@ -66,9 +78,11 @@ VITE_ROBOT_GLM = '@RBT#002'
 # 零一万物机器人ID (必须)
 VITE_ROBOT_ZEROONE = '@RBT#003'
 
+# 通义千问机器人ID (必须)
+VITE_ROBOT_QWEN = '@RBT#004'
+
 # cloud 对象存储url
 VITE_CLOUD_BASE_URL = 'https://ljx-1307934606.cos.ap-beijing.myqcloud.com/'
-
 ```
 
 ## .npmrc

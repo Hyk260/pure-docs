@@ -14,14 +14,14 @@ PureChat 是一款基于前沿技术构建的聊天工作室，它以 Vue3 为�
 
 - [腾讯 IM 即时通讯](https://cloud.tencent.com/product/im)
 
-## 特点
+## 特性
 
 - 📦️ 使用 Vite5 构建
 - 📃 RBAC 模型 + JWT 权限控制
 - 🤖 接入 openai 语言模型
 - ☁️ 聊天工作室 `基于IM即时通讯sdk`
 - 🌚 光明/黑暗 模式主题切换`自动根据系统主题改变`
-- ⚡️ 自定义 SVG 图标组件
+- 📝 支持完整的`Markdown`渲染 流程图、代码高亮等
 - 🔴 国际化支持 English, 简体中文
 - 🔧 Prettier + ESLint 规范
 - 🛡️ GitHub快速登录享受无缝的社交体验

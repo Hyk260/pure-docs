@@ -1,5 +1,27 @@
 # 更新日志
 
+## 0.4.5 @2024.7.23
+### 优化
+- 自定义 highlight 代码语法样式 
+- 自定义 markdown 语法样式
+- 黑暗主题样式色值与精细度优化
+### 新增
+- ai模型列表改造 支持更多模型选项
+- 聊天记录截屏分享功能 [modern-screenshot](https://github.com/qq15725/modern-screenshot)
+
+## 0.4.4 @2024.7.19
+### 修复
+- 修复Markdown部分样式问题
+### 新增
+- 支持完整的Markdown渲染
+- 动态导入全局组件
+### 优化
+- 优化tailwind配置项
+- ai助理页面宽度自适应
+### 变更
+- 关闭web端截屏入口（体验不友好）
+- 替换Markdown插件 `marked` → `markdown-it` [markdown-it](https://github.com/markdown-it/markdown-it)
+
 ## 0.4.3 @2024.7.4
 ### 修复
 - 修复会话草稿

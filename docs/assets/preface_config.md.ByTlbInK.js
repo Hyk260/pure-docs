@@ -1,4 +1,4 @@
-import{_ as s,c as a,o as n,a5 as i}from"./chunks/framework.Bx0JrJuv.js";const g=JSON.parse('{"title":"项目配置","description":"","frontmatter":{},"headers":[],"relativePath":"preface/config.md","filePath":"preface/config.md","lastUpdated":1718546841000}'),p={name:"preface/config.md"},l=i(`<h1 id="项目配置" tabindex="-1">项目配置 <a class="header-anchor" href="#项目配置" aria-label="Permalink to &quot;项目配置&quot;">​</a></h1><h2 id="环境变量" tabindex="-1">环境变量 <a class="header-anchor" href="#环境变量" aria-label="Permalink to &quot;环境变量&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>├── .env                  # 基础环境变量配置文件（优先级最低）</span></span>
+import{_ as s,c as a,o as n,a5 as p}from"./chunks/framework.Bx0JrJuv.js";const g=JSON.parse('{"title":"项目配置","description":"","frontmatter":{},"headers":[],"relativePath":"preface/config.md","filePath":"preface/config.md","lastUpdated":1721638292000}'),i={name:"preface/config.md"},l=p(`<h1 id="项目配置" tabindex="-1">项目配置 <a class="header-anchor" href="#项目配置" aria-label="Permalink to &quot;项目配置&quot;">​</a></h1><h2 id="环境变量" tabindex="-1">环境变量 <a class="header-anchor" href="#环境变量" aria-label="Permalink to &quot;环境变量&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>├── .env                  # 基础环境变量配置文件（优先级最低）</span></span>
 <span class="line"><span>├── .env.local            # 本地环境变量配置文件（优先级最高 会被git忽略）</span></span>
 <span class="line"><span>├── .env.development      # 开发环境变量配置文件</span></span>
 <span class="line"><span>├── .env.production       # 生产环境变量配置文件</span></span></code></pre></div><h2 id="具体配置" tabindex="-1">具体配置 <a class="header-anchor" href="#具体配置" aria-label="Permalink to &quot;具体配置&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span># 本地运行端口号</span></span>
@@ -11,13 +11,16 @@ import{_ as s,c as a,o as n,a5 as i}from"./chunks/framework.Bx0JrJuv.js";const g
 <span class="line"><span>VITE_HTTP_PROXY = &#39;N&#39;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># 是否开启pwa</span></span>
-<span class="line"><span>VITE_PWA = &#39;Y&#39;</span></span>
+<span class="line"><span>VITE_PWA = &#39;N&#39;</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span># 是否是部署的vercel</span></span>
+<span class="line"><span># 是否部署至vercel</span></span>
 <span class="line"><span>VITE_VERCEL = &#39;Y&#39;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># 是否在打包时使用cdn替换本地库</span></span>
 <span class="line"><span>VITE_CDN = &quot;N&quot;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 无服务器模式 (无需后端接口输入用户名即可登录)</span></span>
+<span class="line"><span>VITE_NO_SERVICE = &quot;N&quot;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># 是否生成生产源映射</span></span>
 <span class="line"><span>VITE_SOURCE_MAP = &#39;N&#39;</span></span>
@@ -25,14 +28,17 @@ import{_ as s,c as a,o as n,a5 as i}from"./chunks/framework.Bx0JrJuv.js";const g
 <span class="line"><span># 开发环境读取配置文件路径</span></span>
 <span class="line"><span>VITE_BASE_URL = &#39;/&#39;</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span># 腾讯IM SDKAppID https://cloud.tencent.com/product/im</span></span>
-<span class="line"><span>VITE_SDK_APPID = &#39;&#39;</span></span>
+<span class="line"><span># 腾讯IM SDKAppID https://cloud.tencent.com/product/im (必须)</span></span>
+<span class="line"><span>VITE_IM_SDK_APPID = &#39;1600010416&#39;</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span># 您的openai api密钥 (必须)</span></span>
-<span class="line"><span>VITE_OPENAI_API_KEY = &#39;&#39;</span></span>
+<span class="line"><span># 腾讯IM密钥 密钥信息为敏感信息，请注意保密，不要泄露。(必须)(VITE_NO_SERVICE 为&#39;Y&#39;生效)</span></span>
+<span class="line"><span>VITE_IM_SDK_KEY = &#39;&#39;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># openai api key (必须)</span></span>
+<span class="line"><span>VITE_OPENAI_API_KEY = &#39;ak-a9bMv3tuBaei8i3HJ5U8AwVgcHfuG2Tufu1NXoh026rJtn31&#39;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># openai api 地址 (可选)</span></span>
-<span class="line"><span>VITE_OPENAI_BASE_URL = &#39;https://api.nextapi.fun/&#39;</span></span>
+<span class="line"><span>VITE_OPENAI_PROXY_URL = &#39;https://api.nextapi.fun/&#39;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># 智谱 api key</span></span>
 <span class="line"><span>VITE_ZHIPU_API_KEY = &#39;&#39;</span></span>
@@ -46,6 +52,12 @@ import{_ as s,c as a,o as n,a5 as i}from"./chunks/framework.Bx0JrJuv.js";const g
 <span class="line"><span># 零一万物 api 地址 (可选)</span></span>
 <span class="line"><span>VITE_ZEROONE_BASE_URL = &#39;https://api.lingyiwanwu.com/&#39;</span></span>
 <span class="line"><span></span></span>
+<span class="line"><span># 通义千问 api key</span></span>
+<span class="line"><span>VITE_QWEN_API_KEY = &#39;&#39;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 通义千问 api 地址 (可选)</span></span>
+<span class="line"><span>VITE_QWEN_BASE_URL = &#39;https://dashscope.aliyuncs.com/api/v1/&#39;</span></span>
+<span class="line"><span></span></span>
 <span class="line"><span># chatgpt机器人ID (必须)</span></span>
 <span class="line"><span>VITE_ROBOT_GPT = &#39;@RBT#001&#39;</span></span>
 <span class="line"><span></span></span>
@@ -54,6 +66,9 @@ import{_ as s,c as a,o as n,a5 as i}from"./chunks/framework.Bx0JrJuv.js";const g
 <span class="line"><span></span></span>
 <span class="line"><span># 零一万物机器人ID (必须)</span></span>
 <span class="line"><span>VITE_ROBOT_ZEROONE = &#39;@RBT#003&#39;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span># 通义千问机器人ID (必须)</span></span>
+<span class="line"><span>VITE_ROBOT_QWEN = &#39;@RBT#004&#39;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># cloud 对象存储url</span></span>
 <span class="line"><span>VITE_CLOUD_BASE_URL = &#39;https://ljx-1307934606.cos.ap-beijing.myqcloud.com/&#39;</span></span></code></pre></div><h2 id="npmrc" tabindex="-1">.npmrc <a class="header-anchor" href="#npmrc" aria-label="Permalink to &quot;.npmrc&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>指定 npm 的仓库地址</span></span>
@@ -88,4 +103,4 @@ import{_ as s,c as a,o as n,a5 as i}from"./chunks/framework.Bx0JrJuv.js";const g
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">    // 本地环境预览构建后的dist</span></span>
 <span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    &quot;preview&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;vite preview&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div>`,12),e=[l];function t(h,k,c,o,E,r){return n(),a("div",null,e)}const u=s(p,[["render",t]]);export{g as __pageData,u as default};
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div>`,12),e=[l];function t(h,k,c,E,o,r){return n(),a("div",null,e)}const u=s(i,[["render",t]]);export{g as __pageData,u as default};

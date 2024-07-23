@@ -1,9 +1,10 @@
-import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.Bx0JrJuv.js";const u=JSON.parse('{"title":"目录结构","description":"","frontmatter":{},"headers":[],"relativePath":"preface/directory.md","filePath":"preface/directory.md","lastUpdated":1718096511000}'),e={name:"preface/directory.md"},l=p(`<h1 id="目录结构" tabindex="-1">目录结构 <a class="header-anchor" href="#目录结构" aria-label="Permalink to &quot;目录结构&quot;">​</a></h1><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>PureChat</span></span>
+import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.Bx0JrJuv.js";const u=JSON.parse('{"title":"目录结构","description":"","frontmatter":{},"headers":[],"relativePath":"preface/directory.md","filePath":"preface/directory.md","lastUpdated":1721638292000}'),e={name:"preface/directory.md"},l=p(`<h1 id="目录结构" tabindex="-1">目录结构 <a class="header-anchor" href="#目录结构" aria-label="Permalink to &quot;目录结构&quot;">​</a></h1><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>PureChat</span></span>
 <span class="line"><span>├── .vscode                    // vscode插件和设置</span></span>
 <span class="line"><span>│   ├── extensions.json        // vscode推荐的插件(左侧点击扩展 筛选选中推荐可以一键安装)</span></span>
 <span class="line"><span>│   └── settings.json          // vscode配置(在该项目中生效 可以复制到用户配置文件中)</span></span>
 <span class="line"><span>├── dist_electron              // electron打包文件</span></span>
 <span class="line"><span>├── dist                       // 打包文件</span></span>
+<span class="line"><span>├── electron                   // electron配置</span></span>
 <span class="line"><span>├── locales                    // 国际化语言包</span></span>
 <span class="line"><span>├── node_modules               // 依赖包</span></span>
 <span class="line"><span>├── public                     // 静态目录</span></span>
@@ -13,7 +14,6 @@ import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.Bx0JrJuv.js";const u
 <span class="line"><span>│   ├── assets                 // 主题字体图片 svg icons 等静态资源</span></span>
 <span class="line"><span>│   ├── components             // 全局公用组件</span></span>
 <span class="line"><span>│   ├── directives             // 自定义指令</span></span>
-<span class="line"><span>│   ├── electron               // electron配置</span></span>
 <span class="line"><span>│   ├── constants              // 常量</span></span>
 <span class="line"><span>│   ├── directives             // 指令</span></span>
 <span class="line"><span>│   ├── layout                 // 整体布局结构</span></span>

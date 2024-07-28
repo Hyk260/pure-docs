@@ -19,9 +19,11 @@
 
 ## 如何获取腾讯im appid 和 appkey？
 
-1. 登录 [腾讯云](https://cloud.tencent.com/)，注册腾讯云账号
-2. 登录 [即时通信 IM](https://console.cloud.tencent.com/im) 控制台，创建应用
+1. 登录 [腾讯云](https://cloud.tencent.com/) 注册腾讯云账号
+2. 登录 [即时通信 IM](https://console.cloud.tencent.com/im) 控制台创建应用
 3. 获取 appid 和 appkey
+4. 开始 [初始化sdk](https://cloud.tencent.com/document/product/269/75292)
+
 
 <img src="../public/images/im-1.png">
 

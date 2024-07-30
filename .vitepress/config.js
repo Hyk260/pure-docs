@@ -9,7 +9,7 @@ const Nav = [
   {
     text: "链接",
     items: [
-      { text: "在线预览", link: "https://pureadmin.cn" },
+      { text: "在线预览", link: "https://purechat.cn" },
       { text: "gitee仓库", link: "https://gitee.com/H260788/PureChat" },
       { text: "github仓库", link: "https://github.com/Hyk260/PureChat" },
     ],

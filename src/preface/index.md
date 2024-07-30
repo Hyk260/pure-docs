@@ -4,11 +4,11 @@ PureChat 是一款基于前沿技术的聊天工作室，采用 Vue3 前端框�
 
 ## 在线预览
 
-- [在线预览](https://pureadmin.cn)
+- [在线预览](https://purechat.cn)
 
 ## Electron 版本
 
-- [Electron 版本](https://gitee.com/H260788/pure-chat-app)
+- [Electron 版本](https://github.com/Hyk260/PureChat/tree/electron)
 
 ## SDK
 
@@ -16,12 +16,13 @@ PureChat 是一款基于前沿技术的聊天工作室，采用 Vue3 前端框�
 
 ## 特性
 
-- 📦️ 基于 Vite5 构建
-- 📃 RBAC 模型与 JWT 权限控制
+- 📦️ 基于 Vite5，构建高效应用
+- 📃 JWT 权限控制
 - 🤖 接入 OpenAI 语言模型
+- 📸 聊天记录轻松截图分享
 - ☁️ 聊天工作室基于 IM 即时通讯 SDK
-- 🌚 自动切换光明/黑暗模式
-- 📝 完整支持 Markdown 渲染，流程图与代码高亮
+- 🌙 自动切换光明与黑暗模式
+- 📝 完整支持 Markdown 渲染，代码高亮
 - 🔴 多语言支持：英语与简体中文
 - 🔧 采用 Prettier 与 ESLint 规范
 - 🛡️ GitHub 快速登录，享受无缝社交体验
@@ -29,7 +30,7 @@ PureChat 是一款基于前沿技术的聊天工作室，采用 Vue3 前端框�
 - 🛠 更多特性持续开发中
 
 ## 分支
-main为主分支 基于`Vite5`构建， master分支基于`Vue CLI5`构建
+main为主分支 基于`Vite5`构建， master分支基于`Vue CLI5`构建 electron分支基于`Vite5` + `electron-vite`构建
 
 ## Web
 

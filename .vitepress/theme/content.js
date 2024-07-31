@@ -1,4 +1,5 @@
 export const integrations = [
+  { name: 'Vite', link: '', icon: 'i-logos-vitejs' },
   { name: "Vue", link: "https://cn.vuejs.org", icon: "" },
   { name: "Vite", link: "https://cn.vitejs.dev", icon: "" },
   {

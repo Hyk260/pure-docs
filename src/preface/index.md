@@ -95,3 +95,7 @@ main为主分支 基于`Vite5`构建， master分支基于`Vue CLI5`构建 elect
 PureChat / tools:
 
 <ContentIntegrations />
+
+## 截图
+
+<ContentImages />

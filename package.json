@@ -4,16 +4,8 @@
   "version": "1.1.8",
   "description": "The documentation of PureChat",
   "devDependencies": {
-    "vitepress": "^1.0.0-rc.31",
-    "@iconify-json/carbon": "^1.1.31",
-    "@iconify-json/logos": "^1.1.42",
-    "@iconify-json/mdi": "^1.1.64",
-    "@iconify-json/ph": "^1.1.11",
-    "@iconify-json/twemoji": "^1.1.15",
     "@iconify-json/vscode-icons": "^1.1.33",
-    "unplugin-auto-import": "^0.17.5",
-    "unplugin-vue-components": "^0.26.0",
-    "vite": "^5.2.7"
+    "vitepress": "^1.3.1"
   },
   "scripts": {
     "dev": "vitepress dev --host 0.0.0.0",

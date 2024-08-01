@@ -2,18 +2,6 @@
 
 PureChat 是一款基于前沿技术的聊天工作室，采用 Vue3 前端框架与 Element-Plus 组件库，提供全面且优质的即时通讯解决方案。它深度整合腾讯 IM 即时通讯能力，旨在为开发者打造学习交流的平台，同时为用户带来高效便捷的沟通体验。
 
-## 在线预览
-
-- [在线预览](https://purechat.cn)
-
-## Electron 版本
-
-- [Electron 版本](https://github.com/Hyk260/PureChat/tree/electron)
-
-## SDK
-
-- [腾讯 IM 即时通讯](https://cloud.tencent.com/product/im)
-
 ## 特性
 
 - 📦️ 基于 Vite5，构建高效应用
@@ -82,10 +70,11 @@ PureChat 是一款基于前沿技术的聊天工作室，采用 Vue3 前端框�
 
 ## Elecron
 
-::: warning 注意
-使用Electron框架，确保应用在桌面平台上拥有良好的兼容性和性能，支持 web 所有功能。
-:::
-### 附加功能
+<Callout type='tip'>
+  确保应用在桌面平台上拥有良好的兼容性和体验，支持 web 所有功能。
+</Callout>
+
+- [Electron](https://github.com/Hyk260/PureChat/tree/electron)
 - 桌面图标高亮闪烁提示，让用户直观地了解有新消息。
 - 支持自定义截图功能，方便快速分享屏幕内容。
 - 支持外部协议打开应用，实现与其他应用的便捷交互。

@@ -2,9 +2,9 @@
 
 ## 环境准备
 
-::: warning 前提条件
- Node.js 版本 18.20+
-:::
+<Callout type='warning'>
+  Node.js 版本 18.20+
+</Callout>
 
 ## VSCode插件
 
@@ -72,14 +72,13 @@ pnpm dev
 pnpm build
 ```
 
-::: warning 注意
-最新版本的代码以github为准
-:::
+<Callout type='warning'>
+  最新版本的代码以github为准
+</Callout>
 
 ::: warning 本地开发需注意
-本项目由 [pure-backend](https://github.com/Hyk260/pure-backend.git) 提供API 测试可以使用线上地址 
-本地启动需将后端地址切换成线上地址 baseURL: "https://apichat.fun/" 
-[代码路径](https://gitee.com/H260788/PureChat/blob/master/src/utils/http/index.js#L10) 
+- 本项目由 [pure-backend](https://github.com/Hyk260/pure-backend.git) 提供API 测试可以使用线上地址 
+- 本地启动需将后端地址切换成线上地址 baseURL: "https://apichat.fun/" [代码路径](https://gitee.com/H260788/PureChat/blob/master/src/utils/http/index.js#L10)
 :::
 
 ## SVG 图标使用

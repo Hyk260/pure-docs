@@ -59,7 +59,7 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
   `/v1`，有的则不会。如果你在测试时发现 AI 返回的消息为空，请尝试添加 `/v1` 后缀后重试。
 </Callout>
 
-<Callout type='info'>
+<Callout>
   是否填写 `/v1` 跟模型服务商有很大关系，比如 openai 的默认地址是 `api.openai.com/v1`
   。如果你的代理商转发了 `/v1` 这个接口，那么直接填 `proxy.com` 即可。 但如果模型服务商是直接转发了
   `api.openai.com` 域名，那么你就要自己加上 `/v1` 这个 url。

@@ -30,7 +30,9 @@ PureChat 是一款基于前沿技术的聊天工作室，采用 Vue3 前端框�
 - 🛠 更多特性持续开发中
 
 ## 分支
-main为主分支 基于`Vite5`构建， master分支基于`Vue CLI5`构建 electron分支基于`Vite5` + `electron-vite`构建
+- main为主分支 基于`Vite5`构建
+- master分支基于`Vue CLI5`构建（不在维护）
+- electron分支基于main开发使用`electron-vite`构建
 
 ## Web
 

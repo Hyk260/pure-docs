@@ -99,4 +99,9 @@ export default defineConfig({
   outDir: path.join(process.cwd(), "docs"),
   // 缓存文件的目录，相对于项目根目录
   cacheDir: path.join(process.cwd(), "cache"),
+  vite: {
+    server: {
+      open: true,
+    }
+  },
 });

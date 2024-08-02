@@ -89,4 +89,10 @@ PureChat / tools:
 
 ## 截图
 
-<ContentImages />
+<img src="../public/screenshot/chatgpt.png">
+
+<img src="../public/screenshot/assistant.png">
+
+<img src="../public/screenshot/config.png">
+
+<!-- <ContentImages /> -->

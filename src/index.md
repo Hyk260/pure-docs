@@ -7,7 +7,7 @@ titleTemplate: docs
 hero:
   name: PureChat
   text: 聊天应用与AI开发框架
-  tagline: 基于 Vue3 和 Vite5 构建
+  tagline: 基于 Vue3， Vite5 和 Electron 构建
   image:
     src: https://ljx-1307934606.cos.ap-beijing.myqcloud.com/log.png
     alt: PureChat
@@ -22,20 +22,20 @@ hero:
 features:
   - icon: <span class="logos--openai-icon"></span>
     title: OpenAI
-    details: 集成 ChatGPT 语言模型
+    details: 集成 ChatGPT Ollama等大语言模型
   - icon: 💬
-    title: 聊天工作室
+    title: 会话
     details: 基于腾讯 IM SDK 的即时通信
   - icon: <span class="logos--electron"></span>
     title: Electron
     details: 支持 macOS (.dmg) 和 Windows (.exe) 双平台
-  - icon: 📦
-    title: 开箱即用
-    details: RBAC 模型与 JWT 权限控制
-  - icon: 💻
-    title: 代码规范
-    details: 采用 Prettier 与 ESLint 规范
-  - icon: 🔄
-    title: 语言切换
-    details: 支持英语与简体中文
+  - icon: 🌙
+    title: 主题切换
+    details: 光明与黑暗模式
+  - icon: 📝
+    title: Markdown
+    details: 支持 Markdown 渲染，代码高亮，链接识别
+  - icon: 📸
+    title: 截屏分享
+    details: 聊天记录支持生成截图并支持一键复制
 ---

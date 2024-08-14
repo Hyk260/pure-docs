@@ -71,7 +71,7 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
 ### `ZHIPU_API_KEY`
 
 - 类型：必选
-- 描述：这是你在 智谱 AI 服务中申请的 API 密钥
+- 描述：这是你在 智谱 AI 服务中申请的 API 密钥， 可以前往 [这里](https://open.bigmodel.cn/usercenter/apikeys) 查看
 - 默认值：-
 - 示例：`xxxxxx...xxxxxx`
 
@@ -80,17 +80,15 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
 ### `ZEROONE_API_KEY`
 
 - 类型：必选
-- 描述：这是你在零一万物服务中申请的 API 密钥
+- 描述：这是你在零一万物服务中申请的 API 密钥， 可以前往 [这里](https://platform.lingyiwanwu.com/apikeys) 查看
 - 默认值：-
 - 示例：`xxxxxx...xxxxxx`
-
-[model-list]: /docs/self-hosting/advanced/model-list
 
 ## 通义千问
 
 ### `QWEN_API_KEY`
 
 - 类型：必选
-- 描述：这是你在阿里云百炼平台上获取的 DashScope API 密钥
+- 描述：这是你在阿里云百炼平台上获取的 DashScope API 密钥，可以前往 [这里](https://bailian.console.aliyun.com/?apiKey=1#/api-key) 查看
 - 默认值：-
 - 示例：`sk-xxxxx...xxxxx`

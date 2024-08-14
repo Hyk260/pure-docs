@@ -45,11 +45,14 @@ VITE_IM_SDK_APPID = '1600010416'
 # 腾讯IM密钥 密钥信息为敏感信息，请注意保密，不要泄露。(必须)(VITE_NO_SERVICE 为'Y'生效)
 VITE_IM_SDK_KEY = ''
 
-# openai api key (必须)
-VITE_OPENAI_API_KEY = 'ak-a9bMv3tuBaei8i3HJ5U8AwVgcHfuG2Tufu1NXoh026rJtn31'
+# openai api key (必须) 
+VITE_OPENAI_API_KEY = ''
 
-# openai api 地址 (可选)
+# openai api 代理 地址 (可选)
 VITE_OPENAI_PROXY_URL = 'https://api.nextapi.fun/'
+
+# 本地/远程ollama服务url
+VITE_OLLAMA_PROXY_URL = 'http://127.0.0.1:11434/'
 
 # 智谱 api key
 VITE_ZHIPU_API_KEY = ''
@@ -69,17 +72,20 @@ VITE_QWEN_API_KEY = ''
 # 通义千问 api 地址 (可选)
 VITE_QWEN_BASE_URL = 'https://dashscope.aliyuncs.com/api/v1/'
 
-# chatgpt机器人ID (必须)
+# chatgptID (可选)
 VITE_ROBOT_GPT = '@RBT#001'
 
-# 智谱机器人ID (必须)
+# 智谱ID (可选)
 VITE_ROBOT_GLM = '@RBT#002'
 
-# 零一万物机器人ID (必须)
+# 零一万物ID (可选)
 VITE_ROBOT_ZEROONE = '@RBT#003'
 
-# 通义千问机器人ID (必须)
+# 通义千问ID (可选)
 VITE_ROBOT_QWEN = '@RBT#004'
+
+# ollama
+VITE_ROBOT_OLLAMA = '@RBT#005'
 
 # cloud 对象存储url
 VITE_CLOUD_BASE_URL = 'https://ljx-1307934606.cos.ap-beijing.myqcloud.com/'
@@ -95,32 +101,7 @@ registry=https://registry.npmmirror.com/
 shamefully-hoist=true
 ```
 
-## jsconfig.json
-
-https://www.typescriptlang.org/zh/tsconfig
-
-```json
-{
-  "compilerOptions": {
-    // 设置目标 ECMAScript 版本
-    "target": "es6",
-    // 设置模块生成方式
-    "module": "esnext",
-    // 设置基础路径，用于解析非相对模块的根目录
-    "baseUrl": ".",
-    // 生成源映射文件
-    "sourceMap": true,
-    // 定义模块解析别名
-    "paths": {
-      "@/*": ["src/*"]
-    }
-  },
-  "exclude": ["node_modules", "dist"],
-  "include": ["src/**/*"]
-}
-```
-
-## package.json
+## npm scripts
 
 ```json
 {

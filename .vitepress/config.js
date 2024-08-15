@@ -56,6 +56,20 @@ export default defineConfig({
   description: "PureChat文档",
   head: [
     ["link", { rel: "icon", href: "./favicon.ico" }],
+    [
+      'meta',
+      {
+        name: 'keywords',
+        content: 'purechat, purechat docs'
+      }
+    ],
+    [
+      'meta',
+      {
+        name: 'viewport',
+        content: 'width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+      }
+    ],
     ['meta', { name: 'author', content: 'yongkang' }],
     // ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
   ],

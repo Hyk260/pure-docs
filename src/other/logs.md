@@ -1,11 +1,29 @@
 # 更新日志
 
+## 0.4.9 @2024.8.20
+### 新增
+- 聊天截图包含助手提示词选项
+- robot  tooltip
+### 变更
+- refactor: vue-i18n
+- refactor: router
+- refactor: storage > localStg
+- 自定义首页 loding
+### 优化 
+- 优化mention弹框自适应高度
+- 会话列表缓存
+- 优化部分样式
+- 优化长图消息发送时出现的抖动问题
+### 修复
+- 修复mention弹框键盘上下键切失效问题
+
 ## 0.4.8 @2024.8.12
 ### 变更
 - 修改chatgpt默认模型为 "gpt-4o-mini"
 ### 优化
 - 流式消息到底部更新时机
 - ai助手骨架屏
+- updata element-plus ^2.8.0
 ### 修复
 - 修复video消息被遮挡问题
 ### 新增

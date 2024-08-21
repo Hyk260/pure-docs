@@ -2,6 +2,10 @@
 
 PureChat 在部署时提供了丰富的模型服务商相关的环境变量，你可以使用这些环境变量轻松定义需要在 PureChat 中开启的模型服务商。
 
+<Callout>
+ 客户端请求模式，将从浏览器直接发起会话请求，不会记录你的API Key
+</Callout>
+
 ## OpenAI
 
 ### 获取 OpenAI API Key

@@ -95,4 +95,6 @@ PureChat / tools:
 
 <img src="../public/screenshot/config.png">
 
+<img src="../public/screenshot/screenshot.png">
+
 <!-- <ContentImages /> -->

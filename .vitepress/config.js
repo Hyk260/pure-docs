@@ -6,10 +6,12 @@ import { qqSvg } from "../src/icon/qqSvg";
 const Nav = [
   { text: "介绍", link: "/preface/" },
   { text: "常见问题", link: "/other/FAQ" },
+  { text: "更新日志", link: "/other/logs" },
   {
     text: "链接",
     items: [
       { text: "在线预览", link: "https://purechat.cn" },
+      { text: "Electron", link: "https://github.com/Hyk260/PureChat/releases" },
       { text: "gitee仓库", link: "https://gitee.com/H260788/PureChat" },
       { text: "github仓库", link: "https://github.com/Hyk260/PureChat" },
     ],
@@ -54,6 +56,20 @@ export default defineConfig({
   description: "PureChat文档",
   head: [
     ["link", { rel: "icon", href: "./favicon.ico" }],
+    [
+      'meta',
+      {
+        name: 'keywords',
+        content: 'purechat, purechat docs'
+      }
+    ],
+    [
+      'meta',
+      {
+        name: 'viewport',
+        content: 'width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
+      }
+    ],
     ['meta', { name: 'author', content: 'yongkang' }],
     // ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
   ],

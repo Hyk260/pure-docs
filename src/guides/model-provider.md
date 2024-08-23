@@ -2,6 +2,10 @@
 
 PureChat 在部署时提供了丰富的模型服务商相关的环境变量，你可以使用这些环境变量轻松定义需要在 PureChat 中开启的模型服务商。
 
+<Callout>
+ 客户端请求模式，将从浏览器直接发起会话请求，不会记录你的API Key
+</Callout>
+
 ## OpenAI
 
 ### 获取 OpenAI API Key
@@ -71,7 +75,7 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
 ### `ZHIPU_API_KEY`
 
 - 类型：必选
-- 描述：这是你在 智谱 AI 服务中申请的 API 密钥
+- 描述：这是你在 智谱 AI 服务中申请的 API 密钥， 可以前往 [这里](https://open.bigmodel.cn/usercenter/apikeys) 查看
 - 默认值：-
 - 示例：`xxxxxx...xxxxxx`
 
@@ -80,17 +84,15 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
 ### `ZEROONE_API_KEY`
 
 - 类型：必选
-- 描述：这是你在零一万物服务中申请的 API 密钥
+- 描述：这是你在零一万物服务中申请的 API 密钥， 可以前往 [这里](https://platform.lingyiwanwu.com/apikeys) 查看
 - 默认值：-
 - 示例：`xxxxxx...xxxxxx`
-
-[model-list]: /docs/self-hosting/advanced/model-list
 
 ## 通义千问
 
 ### `QWEN_API_KEY`
 
 - 类型：必选
-- 描述：这是你在阿里云百炼平台上获取的 DashScope API 密钥
+- 描述：这是你在阿里云百炼平台上获取的 DashScope API 密钥，可以前往 [这里](https://bailian.console.aliyun.com/?apiKey=1#/api-key) 查看
 - 默认值：-
 - 示例：`sk-xxxxx...xxxxx`

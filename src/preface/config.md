@@ -30,9 +30,6 @@ VITE_VERCEL = 'Y'
 # 是否在打包时使用cdn替换本地库
 VITE_CDN = "N"
 
-# 无服务器模式 (无需后端接口输入用户名即可登录)
-VITE_NO_SERVICE = "N"
-
 # 是否生成生产源映射
 VITE_SOURCE_MAP = 'N'
 
@@ -42,14 +39,11 @@ VITE_BASE_URL = '/'
 # 腾讯IM SDKAppID https://cloud.tencent.com/product/im (必须)
 VITE_IM_SDK_APPID = '1600010416'
 
-# 腾讯IM密钥 密钥信息为敏感信息，请注意保密，不要泄露。(必须)(VITE_NO_SERVICE 为'Y'生效)
-VITE_IM_SDK_KEY = ''
-
 # openai api key (必须) 
 VITE_OPENAI_API_KEY = ''
 
 # openai api 代理 地址 (可选)
-VITE_OPENAI_PROXY_URL = 'https://api.nextapi.fun/'
+VITE_OPENAI_PROXY_URL = 'https://api.openai.com/v1'
 
 # 本地/远程ollama服务url
 VITE_OLLAMA_PROXY_URL = 'http://127.0.0.1:11434/'

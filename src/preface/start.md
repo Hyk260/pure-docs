@@ -3,7 +3,9 @@
 ## 环境准备
 
 <Callout type='warning'>
-  Node.js 版本 18.20+
+
+ - Node.js 版本 18.20+
+ - pnpm >= 8.7.0，推荐最新版本。
 </Callout>
 
 ## VSCode插件
@@ -44,19 +46,6 @@
 <Callout type='warning'>
   最新版本的代码以github为准
 </Callout>
-
-## 选择包管理工具
-::: code-group
-  ```bash [npm]
-  https://www.npmrc.cn/
-  ```
-  ```bash [yarn]
-  https://yarn.nodejs.cn/
-  ```
-  ```bash [pnpm]
-  https://www.pnpm.cn/
-  ```
-:::
 
 #### 安装依赖
 

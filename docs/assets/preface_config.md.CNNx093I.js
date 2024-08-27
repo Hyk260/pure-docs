@@ -1,4 +1,4 @@
-import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.vajmPRik.js";const _=JSON.parse('{"title":"项目配置","description":"","frontmatter":{},"headers":[],"relativePath":"preface/config.md","filePath":"preface/config.md","lastUpdated":1723613351000}'),i={name:"preface/config.md"},l=p(`<h1 id="项目配置" tabindex="-1">项目配置 <a class="header-anchor" href="#项目配置" aria-label="Permalink to &quot;项目配置&quot;">​</a></h1><h2 id="环境变量" tabindex="-1">环境变量 <a class="header-anchor" href="#环境变量" aria-label="Permalink to &quot;环境变量&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>├── .env                  # 基础环境变量配置文件（优先级最低）</span></span>
+import{_ as s,c as a,o as n,a5 as p}from"./chunks/framework.vajmPRik.js";const _=JSON.parse('{"title":"项目配置","description":"","frontmatter":{},"headers":[],"relativePath":"preface/config.md","filePath":"preface/config.md","lastUpdated":1724739451000}'),i={name:"preface/config.md"},l=p(`<h1 id="项目配置" tabindex="-1">项目配置 <a class="header-anchor" href="#项目配置" aria-label="Permalink to &quot;项目配置&quot;">​</a></h1><h2 id="环境变量" tabindex="-1">环境变量 <a class="header-anchor" href="#环境变量" aria-label="Permalink to &quot;环境变量&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>├── .env                  # 基础环境变量配置文件（优先级最低）</span></span>
 <span class="line"><span>├── .env.local            # 本地环境变量配置文件（优先级最高 会被git忽略）</span></span>
 <span class="line"><span>├── .env.development      # 开发环境变量配置文件</span></span>
 <span class="line"><span>├── .env.production       # 生产环境变量配置文件</span></span></code></pre></div><h2 id="具体配置" tabindex="-1">具体配置 <a class="header-anchor" href="#具体配置" aria-label="Permalink to &quot;具体配置&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span># 本地运行端口号</span></span>
@@ -19,9 +19,6 @@ import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.vajmPRik.js";const _
 <span class="line"><span># 是否在打包时使用cdn替换本地库</span></span>
 <span class="line"><span>VITE_CDN = &quot;N&quot;</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span># 无服务器模式 (无需后端接口输入用户名即可登录)</span></span>
-<span class="line"><span>VITE_NO_SERVICE = &quot;N&quot;</span></span>
-<span class="line"><span></span></span>
 <span class="line"><span># 是否生成生产源映射</span></span>
 <span class="line"><span>VITE_SOURCE_MAP = &#39;N&#39;</span></span>
 <span class="line"><span></span></span>
@@ -31,14 +28,11 @@ import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.vajmPRik.js";const _
 <span class="line"><span># 腾讯IM SDKAppID https://cloud.tencent.com/product/im (必须)</span></span>
 <span class="line"><span>VITE_IM_SDK_APPID = &#39;1600010416&#39;</span></span>
 <span class="line"><span></span></span>
-<span class="line"><span># 腾讯IM密钥 密钥信息为敏感信息，请注意保密，不要泄露。(必须)(VITE_NO_SERVICE 为&#39;Y&#39;生效)</span></span>
-<span class="line"><span>VITE_IM_SDK_KEY = &#39;&#39;</span></span>
-<span class="line"><span></span></span>
 <span class="line"><span># openai api key (必须) </span></span>
 <span class="line"><span>VITE_OPENAI_API_KEY = &#39;&#39;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># openai api 代理 地址 (可选)</span></span>
-<span class="line"><span>VITE_OPENAI_PROXY_URL = &#39;https://api.nextapi.fun/&#39;</span></span>
+<span class="line"><span>VITE_OPENAI_PROXY_URL = &#39;https://api.openai.com/v1&#39;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># 本地/远程ollama服务url</span></span>
 <span class="line"><span>VITE_OLLAMA_PROXY_URL = &#39;http://127.0.0.1:11434/&#39;</span></span>
@@ -92,4 +86,4 @@ import{_ as s,c as n,o as a,a5 as p}from"./chunks/framework.vajmPRik.js";const _
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">    // 本地环境预览构建后的dist</span></span>
 <span class="line"><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    &quot;preview&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;vite preview&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div>`,9),e=[l];function t(c,h,o,d,E,r){return a(),n("div",null,e)}const u=s(i,[["render",t]]);export{_ as __pageData,u as default};
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div>`,9),e=[l];function t(c,h,o,d,r,E){return n(),a("div",null,e)}const u=s(i,[["render",t]]);export{_ as __pageData,u as default};

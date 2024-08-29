@@ -17,19 +17,11 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
 - 注册一个 [OpenAI 账户](https://platform.openai.com/signup)，你需要使用国际手机号、非大陆邮箱进行注册；
 - 注册完毕后，前往 [API Keys](https://platform.openai.com/api-keys) 页面，点击 `Create new secret key` 创建新的 API Key:
 
-- 步骤 1：打开创建窗口           
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/28616219/296253192-ff2193dd-f125-4e58-82e8-91bc376c0d68.png">
-
-- 步骤 2：创建 API Key
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/28616219/296254170-803bacf0-4471-4171-ae79-0eab08d621d1.png">
-
-- 步骤 3：获取 API Key
-<img src="https://github-production-user-asset-6210df.s3.amazonaws.com/28616219/296255167-f2745f2b-f083-4ba8-bc78-9b558e0002de.png">
-
 - 将此 API Key 填写到 PureChat 的 API Key 配置中，即可开始使用。
 
-> 账户注册后，一般有 5 美元的免费额度，但有效期只有三个月。
-> 如果你希望长期使用你的 API Key，你需要完成支付的信用卡绑定。由于 OpenAI 只支持外币信用卡，因此你需要找到合适的支付渠道，此处不再详细展开。
+<Callout type='warning'>
+  账户注册后，一般有 5 美元的免费额度，但有效期只有三个月。
+</Callout>
 
 <br/>
 

@@ -2,11 +2,10 @@
 
 ## 环境准备
 
-<Callout type='warning'>
-
+::: tip
  - Node.js 版本 18.20+
  - pnpm >= 8.7.0，推荐最新版本。
-</Callout>
+:::
 
 ## VSCode插件
 

@@ -6,7 +6,7 @@ export const integrations = [
     link: "https://element-plus.org",
     icon: "logos--element",
   },
-  { name: "VueUse", link: "https://www.vueusejs.com", icon: "logos--vueuse" },
+  { name: "VueUse", link: "https://vueuse.org", icon: "logos--vueuse" },
   { name: "Eslint", link: "https://eslint.nodejs.cn", icon: "logos--eslint" },
   {
     name: "Sass",
@@ -32,5 +32,15 @@ export const integrations = [
     name: "Lodash",
     link: "https://www.lodashjs.com",
     icon: "logos--lodash",
+  },
+  {
+    name: "pnpm",
+    link: "https://www.pnpm.cn",
+    icon: "logos--pnpm",
+  },
+  {
+    name: "vercel",
+    link: "https://vercel.com",
+    icon: "logos--vercel-icon",
   },
 ];

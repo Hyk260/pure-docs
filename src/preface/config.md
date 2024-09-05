@@ -39,7 +39,7 @@ VITE_BASE_URL = '/'
 # 腾讯IM SDKAppID https://cloud.tencent.com/product/im (必须)
 VITE_IM_SDK_APPID = '1600010416'
 
-# openai api key (必须) 
+# openai api key (必须)
 VITE_OPENAI_API_KEY = ''
 
 # openai api 代理 地址 (可选)
@@ -100,7 +100,7 @@ shamefully-hoist=true
 ```json
 {
   "scripts": {
-    // 启动
+    // web启动
     "dev": "vite",
     // 打包（生产环境）
     "build": "vite build",
@@ -108,6 +108,12 @@ shamefully-hoist=true
     "build:dev": "vite build --mode development",
     // 本地环境预览构建后的dist
     "preview": "vite preview",
+    // electron启动
+    "app:dev": "electron-vite dev --watch",
+    // 打包（window）
+    "app:builder:win": "electron-vite build && electron-builder --win",
+    // 打包（mac）
+    "app:builder:mac": "electron-vite build && electron-builder --mac",
   }
 }
 ```

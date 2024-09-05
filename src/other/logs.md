@@ -1,4 +1,16 @@
 # 更新日志
+## 0.5.0 @2024.8.30
+### 变更
+- refactor: axios
+- login loding
+- bug groupTipElement
+- ElImageViewer
+- 打包视图分享插件 rollup-plugin-visualizer
+- 移除无服务器模式相关配置和逻辑
+- 个人详情卡片
+- 更新AI平台服务配置，优化错误处理和日志记录，更新视图和代码优化交互
+- 增加文件类型支持
+- 截图分享自定义渐变背景色
 
 ## 0.4.9 @2024.8.20
 ### 新增

@@ -48,9 +48,9 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
 
 - 类型：可选
 - 描述：如果你手动配置了 OpenAI 接口代理，可以使用此配置项来覆盖默认的 OpenAI API 请求基础 URL
-- 默认值：`https://api.openai.com/v1`
-- 示例：`https://api.chatanywhere.cn` 或 `https://aihubmix.com/v1`
-- 测试：`https://api.nextapi.fun`
+- 默认值：`https://api.openai.com/`
+- 示例：`https://api.chatanywhere.cn/` 或 `https://aihubmix.com/`
+- 测试：`https://api.nextapi.fun/`
 
 <Callout type='warning'>
   请检查你的代理服务商的请求后缀，有的代理服务商会在请求后缀添加

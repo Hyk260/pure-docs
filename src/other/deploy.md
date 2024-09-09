@@ -4,15 +4,15 @@
 
 ## Vercel 部署流程
 
-### 准备好你的 OpenAI API Key
+### 准备好你的 im appid 和 appkey
 
-前往 [OpenAI API Key](https://platform.openai.com/account/api-keys) 获取你的 OpenAI API Key
+[如何获取腾讯im appid 和 appkey](/other/FAQ.html#如何获取腾讯im-appid-和-appkey)
 
 ### 点击下方按钮进行部署
 
 [![][deploy-button-image]][deploy-link]
-直接使用 GitHub 账号登录即可，记得在环境变量页填入
-`VITE_OPENAI_API_KEY` （OpenAI API Key）
+直接使用 GitHub 账号登录即可，在环境变量页填入
+`ENABLE_EXPERIMENTAL_COREPACK` （实验性 corepack）
 `VITE_IM_SDK_APPID`（腾讯IM sdkappid）
 `VITE_SERVICE_BASE_URL`（服务器地址）
 
@@ -29,4 +29,4 @@ Vercel 分配的域名 DNS 在某些区域被污染了，绑定自定义域名�
 <!-- LINK GROUP -->
 
 [deploy-button-image]: https://vercel.com/button
-[deploy-link]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FHyk260%2FPureChat&env=VITE_OPENAI_API_KEY,VITE_IM_SDK_APPID,VITE_SERVICE_BASE_URL&project-name=pure-chat&repository-name=pure-chat
+[deploy-link]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FHyk260%2FPureChat&env=ENABLE_EXPERIMENTAL_COREPACK,VITE_IM_SDK_APPID,VITE_SERVICE_BASE_URL&project-name=pure-chat&repository-name=pure-chat

@@ -1,4 +1,4 @@
-import{_ as s,c as a,o as n,a5 as p}from"./chunks/framework.vajmPRik.js";const u=JSON.parse('{"title":"项目配置","description":"","frontmatter":{},"headers":[],"relativePath":"preface/config.md","filePath":"preface/config.md","lastUpdated":1725506471000}'),i={name:"preface/config.md"},l=p(`<h1 id="项目配置" tabindex="-1">项目配置 <a class="header-anchor" href="#项目配置" aria-label="Permalink to &quot;项目配置&quot;">​</a></h1><h2 id="环境变量" tabindex="-1">环境变量 <a class="header-anchor" href="#环境变量" aria-label="Permalink to &quot;环境变量&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>├── .env                  # 基础环境变量配置文件（优先级最低）</span></span>
+import{_ as s,c as a,o as n,a5 as p}from"./chunks/framework.vajmPRik.js";const u=JSON.parse('{"title":"项目配置","description":"","frontmatter":{},"headers":[],"relativePath":"preface/config.md","filePath":"preface/config.md","lastUpdated":1725873080000}'),i={name:"preface/config.md"},l=p(`<h1 id="项目配置" tabindex="-1">项目配置 <a class="header-anchor" href="#项目配置" aria-label="Permalink to &quot;项目配置&quot;">​</a></h1><h2 id="环境变量" tabindex="-1">环境变量 <a class="header-anchor" href="#环境变量" aria-label="Permalink to &quot;环境变量&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>├── .env                  # 基础环境变量配置文件（优先级最低）</span></span>
 <span class="line"><span>├── .env.local            # 本地环境变量配置文件（优先级最高 会被git忽略）</span></span>
 <span class="line"><span>├── .env.development      # 开发环境变量配置文件</span></span>
 <span class="line"><span>├── .env.production       # 生产环境变量配置文件</span></span></code></pre></div><h2 id="具体配置" tabindex="-1">具体配置 <a class="header-anchor" href="#具体配置" aria-label="Permalink to &quot;具体配置&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span># 本地运行端口号</span></span>
@@ -32,7 +32,7 @@ import{_ as s,c as a,o as n,a5 as p}from"./chunks/framework.vajmPRik.js";const u
 <span class="line"><span>VITE_OPENAI_API_KEY = &#39;&#39;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># openai api 代理 地址 (可选)</span></span>
-<span class="line"><span>VITE_OPENAI_PROXY_URL = &#39;https://api.openai.com/v1&#39;</span></span>
+<span class="line"><span>VITE_OPENAI_PROXY_URL = &#39;https://api.openai.com/&#39;</span></span>
 <span class="line"><span></span></span>
 <span class="line"><span># 本地/远程ollama服务url</span></span>
 <span class="line"><span>VITE_OLLAMA_PROXY_URL = &#39;http://127.0.0.1:11434/&#39;</span></span>

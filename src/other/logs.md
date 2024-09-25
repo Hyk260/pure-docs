@@ -1,4 +1,27 @@
 # 更新日志
+
+## 0.5.3 @2024.9.24
+### 变更
+- timeFormat函数优化
+- fix: style
+- 配置自定义云端openai api key 与 porxy
+
+## 0.5.2 @2024.9.18
+### electron
+- Update config across app, fix minor UI inconsistencies
+- 更新标题栏配置和优化代码，修复错误
+
+## 0.5.1 @2024.9.11
+### 变更
+- 增加文件类型图标支持exe json js svg log
+- useScreenshot loading
+- useScreenshot qrcode 
+- .env.vercel
+- 会话草稿优化 支持图片 表情包 文件 文字 并列展示
+- 修改Ollama默认模型 qwen2:7b -> llama3.1:8b
+### electron
+- 修复pnpm安装依赖时出现的错误
+
 ## 0.5.0 @2024.8.30
 ### 变更
 - refactor: axios

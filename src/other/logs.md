@@ -3,7 +3,6 @@
 ## 0.5.3 @2024.9.24
 ### 变更
 - timeFormat函数优化
-- fix: style
 - 配置自定义云端openai api key 与 porxy
 
 ## 0.5.2 @2024.9.18
@@ -14,9 +13,6 @@
 ## 0.5.1 @2024.9.11
 ### 变更
 - 增加文件类型图标支持exe json js svg log
-- useScreenshot loading
-- useScreenshot qrcode 
-- .env.vercel
 - 会话草稿优化 支持图片 表情包 文件 文字 并列展示
 - 修改Ollama默认模型 qwen2:7b -> llama3.1:8b
 ### electron
@@ -24,9 +20,6 @@
 
 ## 0.5.0 @2024.8.30
 ### 变更
-- refactor: axios
-- login loding
-- bug groupTipElement
 - ElImageViewer
 - 打包视图分享插件 rollup-plugin-visualizer
 - 移除无服务器模式相关配置和逻辑
@@ -38,12 +31,6 @@
 ## 0.4.9 @2024.8.20
 ### 新增
 - 聊天截图包含助手提示词选项
-- robot  tooltip
-### 变更
-- refactor: vue-i18n
-- refactor: router
-- refactor: storage > localStg
-- 自定义首页 loding
 ### 优化 
 - 优化mention弹框自适应高度
 - 会话列表缓存

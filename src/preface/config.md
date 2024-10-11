@@ -7,6 +7,7 @@
 ├── .env.local            # 本地环境变量配置文件（优先级最高 会被git忽略）
 ├── .env.development      # 开发环境变量配置文件
 ├── .env.production       # 生产环境变量配置文件
+├── .env.vercel           # 一件部署到vercel的配置文件 Import.env
 ```
 
 ## 具体配置
@@ -36,10 +37,10 @@ VITE_SOURCE_MAP = 'N'
 # 开发环境读取配置文件路径
 VITE_BASE_URL = '/'
 
-# 腾讯IM SDKAppID https://cloud.tencent.com/product/im (必须)
-VITE_IM_SDK_APPID = '1600010416'
+# 腾讯IM SDKAppID https://cloud.tencent.com/product/im (必须)*
+VITE_IM_SDK_APPID = ''
 
-# openai api key (必须)
+# openai api key
 VITE_OPENAI_API_KEY = ''
 
 # openai api 代理 地址 (可选)
@@ -100,7 +101,7 @@ shamefully-hoist=true
 ```json
 {
   "scripts": {
-    // web启动
+    // web 启动
     "dev": "vite",
     // 打包（生产环境）
     "build": "vite build",
@@ -108,11 +109,11 @@ shamefully-hoist=true
     "build:dev": "vite build --mode development",
     // 本地环境预览构建后的dist
     "preview": "vite preview",
-    // electron启动
+    // electron 启动
     "app:dev": "electron-vite dev --watch",
-    // 打包（window）
+    // electron（打包window）
     "app:builder:win": "electron-vite build && electron-builder --win",
-    // 打包（mac）
+    // electron（打包mac）
     "app:builder:mac": "electron-vite build && electron-builder --mac",
   }
 }

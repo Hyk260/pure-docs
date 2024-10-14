@@ -1,6 +1,6 @@
 # 介绍
 
-PureChat 是一款优雅的聊天应用，用于学习参考
+PureChat 是一款优雅的聊天应用，内置ChatGPT Ollama等大预言模型，基于最新的前端技术栈，包括 Vue3, Vite5, ElementPlus 和 tailwindcss，同样是一个快速学习前沿技术的最佳实践。
 
 ## 特性
 

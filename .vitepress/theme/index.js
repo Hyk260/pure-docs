@@ -10,6 +10,7 @@ import layout from "./layout.vue";
 import "./style/overrides.css";
 import "./style/rainbow.css";
 import "./style/vars.css";
+import "./style/iconify.css"
 import "./style/index.css";
 
 let homePageStyle = null;

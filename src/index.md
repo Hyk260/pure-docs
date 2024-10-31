@@ -20,13 +20,13 @@ hero:
       link: https://github.com/Hyk260/PureChat
 
 features:
-  - icon: <span class="logos--openai-icon"></span>
+  - icon: <span class="iconify logos-openai"></span>
     title: OpenAI
     details: 集成 ChatGPT Ollama等大语言模型
   - icon: 💬
     title: 会话
     details: 基于腾讯 IM SDK 的即时通信
-  - icon: <span class="logos--electron"></span>
+  - icon: <span class="iconify logos-electron"></span>
     title: Electron
     details: 支持 macOS (.dmg) 和 Windows (.exe) 双平台
   - icon: 🌙

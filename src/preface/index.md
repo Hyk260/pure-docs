@@ -85,6 +85,10 @@ PureChat / tools:
 
 <ContentIntegrations />
 
+## 趋势
+
+![PurerChat Star History Chart](https://api.star-history.com/svg?repos=Hyk260/PureChat&type=Date)
+
 ## 截图
 
 <img src="../public/screenshot/chatgpt.png">

@@ -43,4 +43,20 @@ export const integrations = [
     link: "https://vercel.com",
     icon: "logos--vercel-icon",
   },
+  {
+    name: "ollama",
+    // link: "https://ollama.com",
+    link: "https://github.com/ollama/ollama-js",
+    icon: "simple-icons--ollama",
+  },
+  {
+    name: "nodejs",
+    link: "https://nodejs.cn/",
+    icon: "logos--nodejs",
+  },
+  {
+    name: "axios",
+    link: "https://www.axios-http.cn/",
+    icon: "logos--axios",
+  },
 ];

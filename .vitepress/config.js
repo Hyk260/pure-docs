@@ -1,6 +1,12 @@
 import path from "node:path";
 import process from "node:process";
 import { defineConfig } from "vitepress";
+import {
+  groupIconMdPlugin,
+  groupIconVitePlugin,
+  // localIconLoader,
+} from "vitepress-plugin-group-icons";
+import { transformerTwoslash } from "@shikijs/vitepress-twoslash";
 import { qqSvg } from "../src/icon/qqSvg";
 
 const Nav = [
@@ -18,6 +24,28 @@ const Nav = [
     ],
   },
 ];
+
+const Head = [
+  ["link", { rel: "icon", href: "./favicon.ico" }],
+  [
+    "meta",
+    {
+      name: "keywords",
+      content: "purechat, purechat docs",
+    },
+  ],
+  [
+    "meta",
+    {
+      name: "viewport",
+      content:
+        "width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no",
+    },
+  ],
+  ["meta", { name: "author", content: "yongkang" }],
+  // ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
+];
+
 const Sidebar = [
   {
     text: "前言",
@@ -46,10 +74,12 @@ const Sidebar = [
       { text: "提示词指南", link: "/guides/prompts" },
       { text: "模型服务商", link: "/guides/model-provider" },
       { text: "Ollama集成", link: "/guides/ollama" },
-      { text: "Ollama使用", link: "/guides/olama-usage" }
+      { text: "Ollama使用", link: "/guides/olama-usage" },
     ],
   },
 ];
+
+const ogUrl = "https://hyk260.github.io/pure-docs";
 
 export default defineConfig({
   lang: "zh-CN",
@@ -57,26 +87,16 @@ export default defineConfig({
   // https://vitepress.dev/zh/reference/site-config#base
   base: "/pure-docs/", // /pure-docs/
   description: "PureChat文档",
-  head: [
-    ["link", { rel: "icon", href: "./favicon.ico" }],
-    [
-      'meta',
-      {
-        name: 'keywords',
-        content: 'purechat, purechat docs'
-      }
-    ],
-    [
-      'meta',
-      {
-        name: 'viewport',
-        content: 'width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'
-      }
-    ],
-    ['meta', { name: 'author', content: 'yongkang' }],
-    // ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
-  ],
+  head: Head,
   themeConfig: {
+    editLink: {
+      pattern: "https://github.com/Hyk260/pure-docs/edit/main/:path",
+      text: "为此页提供修改建议",
+    },
+    outline: {
+      label: "本页目录",
+      level: [2, 3],
+    },
     // 自定义上次更新的文本和日期格式。
     lastUpdated: {
       text: "上次更新",
@@ -86,13 +106,28 @@ export default defineConfig({
       },
     },
     // cleanUrls: true,
-    ignoreDeadLinks: [/^\/play/, /^\/interactive/, /:\/\/localhost/],
-    // markdown: {
-    //   theme: {
-    //     light: "vitesse-light",
-    //     dark: "vitesse-dark",
-    //   },
-    // },
+    // ignoreDeadLinks: [/^\/play/, /^\/interactive/, /:\/\/localhost/],
+    markdown: {
+      codeTransformers: [transformerTwoslash()],
+      config(md) {
+        md.use(groupIconMdPlugin);
+      },
+      // theme: {
+      //   light: "vitesse-light",
+      //   dark: "vitesse-dark",
+      // },
+    },
+    transformPageData(pageData) {
+      const canonicalUrl = `${ogUrl}/${pageData.relativePath}`
+        .replace(/\/index\.md$/, "/")
+        .replace(/\.md$/, "/");
+      pageData.frontmatter.head ??= [];
+      pageData.frontmatter.head.unshift(
+        ["link", { rel: "canonical", href: canonicalUrl }],
+        ["meta", { property: "og:title", content: pageData.title }]
+      );
+      return pageData;
+    },
     // 导航栏上显示的 Logo，位于站点标题右侧。
     logo: "/favicon.png",
     socialLinks: [
@@ -119,8 +154,15 @@ export default defineConfig({
   // 缓存文件的目录，相对于项目根目录
   cacheDir: path.join(process.cwd(), "cache"),
   vite: {
+    plugins: [
+      groupIconVitePlugin({
+        customIcon: {
+          gitlab: "vscode-icons:file-type-gitlab",
+        },
+      }),
+    ],
     server: {
       open: true,
-    }
+    },
   },
 });

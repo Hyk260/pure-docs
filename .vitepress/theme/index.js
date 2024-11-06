@@ -1,29 +1,36 @@
 // https://vitepress.dev/guide/custom-theme
-import Theme from "vitepress/theme";
+import DefaultTheme from "vitepress/theme";
 import { h, watch } from "vue";
-
+import layout from "./layout.vue";
 import Callout from "./components/Callout.vue";
 import ContentIntegrations from "./components/ContentIntegrations.vue";
-
-import layout from "./layout.vue";
+import AsideSponsors from './components/AsideSponsors.vue'
+import TwoslashFloatingVue from "@shikijs/vitepress-twoslash/client";
+import "@shikijs/vitepress-twoslash/style.css";
+import "virtual:group-icons.css";
 // import "./style/style.css";
 import "./style/overrides.css";
 import "./style/rainbow.css";
 import "./style/vars.css";
-import "./style/iconify.css"
+import "./style/iconify.css";
 import "./style/index.css";
 
 let homePageStyle = null;
 
 export default {
-  ...Theme,
+  // ...DefaultTheme,
+  extends: DefaultTheme,
   Layout() {
+    // return h(DefaultTheme.Layout, null, {
+    //   "aside-ads-before": () => h(AsideSponsors),
+    // });
     return h(layout);
   },
   enhanceApp({ app, router, siteData }) {
     if (typeof window === "undefined") return;
     app.component("Callout", Callout);
     app.component("ContentIntegrations", ContentIntegrations);
+    app.use(TwoslashFloatingVue);
     watch(
       () => router.route.data.relativePath,
       () => updateHomePageStyle(location.pathname === "/"),

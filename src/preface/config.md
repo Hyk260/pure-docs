@@ -98,7 +98,7 @@ shamefully-hoist=true
 
 ## npm scripts
 
-```json
+```json [package.json]
 {
   "scripts": {
     // web 启动

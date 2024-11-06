@@ -25,9 +25,9 @@
 4. 开始 [初始化sdk](https://cloud.tencent.com/document/product/269/75292)
 
 
-<img src="../public/images/im-1.png">
+<img src="/images/im-1.png">
 
-<img src="../public/images/im-2.png">
+<img src="/images/im-2.png">
 
 ## 如何部署在 Vercel 上
 

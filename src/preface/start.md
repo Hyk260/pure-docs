@@ -2,7 +2,9 @@
 
 ## 环境准备
 
-::: tip
+::: tip 兼容性注意
+Vite 需要 [Node.js](https://nodejs.org/en/) 版本 18+ 或 20+。然而，有些模板需要依赖更高的 Node 版本才能正常运行，当你的包管理器发出警告时，请注意升级你的 Node 版本。
+
  - Node.js 版本 18.20+
  - pnpm >= 8.7.0，推荐最新版本。
 :::
@@ -10,35 +12,58 @@
 ## 拉取代码
 
 ::: code-group
-  ```bash [GitHub]
-  git clone https://github.com/Hyk260/PureChat.git
-  ```
-  ```bash [gitee]
-  git clone https://gitee.com/H260788/PureChat.git
-  ```
+
+```bash [GitHub]
+git clone https://github.com/Hyk260/PureChat.git
+```
+
+```bash [Gitee]
+git clone https://gitee.com/H260788/PureChat.git
+```
+
 :::
 
 <Callout type='warning'>
-  最新版本的代码以github为准
+  最新版本的代码以GitHub为准
 </Callout>
 
 #### 安装依赖
 
-```
+```bash
 pnpm install
 ```
 
 #### 启动项目
 
+::: code-group
+
+```bash [web]
+pnpm run dev
 ```
-pnpm dev
+
+```bash [electron]
+pnpm run app:dev
 ```
+
+:::
 
 #### 打包
 
+::: code-group
+
+```bash [web]
+pnpm run build
 ```
-pnpm build
+
+```bash [window]
+pnpm run app:builder:win
 ```
+
+```bash [mac]
+pnpm run app:builder:mac
+```
+
+:::
 
 ## 后端代码
 Node.js API service 基于 Node.js 的 API 服务，[项目地址](https://github.com/Hyk260/pure-backend)

@@ -4,8 +4,11 @@
   "version": "1.2.6",
   "description": "The documentation of PureChat",
   "devDependencies": {
+    "@shikijs/vitepress-twoslash": "^1.22.2",
+    "vitepress-plugin-group-icons": "^1.3.0",
     "@iconify-json/vscode-icons": "^1.1.33",
-    "vitepress": "^1.3.1"
+    "vue": "^3.5.12",
+    "vitepress": "1.5.0"
   },
   "scripts": {
     "dev": "vitepress dev --host 0.0.0.0",

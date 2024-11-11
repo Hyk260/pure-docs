@@ -90,7 +90,7 @@ export default defineConfig({
   head: Head,
   themeConfig: {
     editLink: {
-      pattern: "https://github.com/Hyk260/pure-docs/edit/main/:path",
+      pattern: "https://github.com/Hyk260/pure-docs/edit/main/src/:path",
       text: "为此页提供修改建议",
     },
     outline: {
@@ -105,17 +105,19 @@ export default defineConfig({
         timeStyle: "medium",
       },
     },
-    // cleanUrls: true,
-    // ignoreDeadLinks: [/^\/play/, /^\/interactive/, /:\/\/localhost/],
+    // https://vitepress.dev/zh/reference/site-config#cleanurls
+    cleanUrls: true,
+    // https://vitepress.dev/zh/reference/site-config#ignoredeadlinks
+    ignoreDeadLinks: [/^\/play/, /^\/interactive/, /:\/\/localhost/],
     markdown: {
-      codeTransformers: [transformerTwoslash()],
       config(md) {
         md.use(groupIconMdPlugin);
       },
-      // theme: {
-      //   light: "vitesse-light",
-      //   dark: "vitesse-dark",
-      // },
+      codeTransformers: [transformerTwoslash()],
+      theme: {
+        light: "vitesse-light",
+        dark: "vitesse-dark",
+      },
     },
     transformPageData(pageData) {
       const canonicalUrl = `${ogUrl}/${pageData.relativePath}`

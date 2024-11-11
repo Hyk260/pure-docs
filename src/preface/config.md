@@ -86,7 +86,7 @@ VITE_ROBOT_OLLAMA = '@RBT#005'
 VITE_CLOUD_BASE_URL = 'https://ljx-1307934606.cos.ap-beijing.myqcloud.com/'
 ```
 
-## .npmrc
+## npmrc
 
 ```
 指定 npm 的仓库地址
@@ -96,7 +96,7 @@ registry=https://registry.npmmirror.com/
 shamefully-hoist=true
 ```
 
-## npm scripts
+## package.json
 
 ```json [package.json]
 {

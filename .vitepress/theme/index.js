@@ -4,10 +4,9 @@ import { h, watch } from "vue";
 import layout from "./layout.vue";
 import Callout from "./components/Callout.vue";
 import ContentIntegrations from "./components/ContentIntegrations.vue";
-import AsideSponsors from './components/AsideSponsors.vue'
+import AsideSponsors from "./components/AsideSponsors.vue";
 import TwoslashFloatingVue from "@shikijs/vitepress-twoslash/client";
-import "@shikijs/vitepress-twoslash/style.css";
-import "virtual:group-icons.css";
+
 // import "./style/style.css";
 import "./style/overrides.css";
 import "./style/rainbow.css";
@@ -15,10 +14,13 @@ import "./style/vars.css";
 import "./style/iconify.css";
 import "./style/index.css";
 
+import "@shikijs/vitepress-twoslash/style.css";
+import "virtual:group-icons.css";
+
+
 let homePageStyle = null;
 
 export default {
-  // ...DefaultTheme,
   extends: DefaultTheme,
   Layout() {
     // return h(DefaultTheme.Layout, null, {
@@ -27,10 +29,10 @@ export default {
     return h(layout);
   },
   enhanceApp({ app, router, siteData }) {
-    if (typeof window === "undefined") return;
     app.component("Callout", Callout);
     app.component("ContentIntegrations", ContentIntegrations);
     app.use(TwoslashFloatingVue);
+
     watch(
       () => router.route.data.relativePath,
       () => updateHomePageStyle(location.pathname === "/"),
@@ -41,12 +43,13 @@ export default {
 
 if (typeof window !== "undefined") {
   const browser = navigator.userAgent.toLowerCase();
-  if (browser.includes("chrome"))
+  if (browser.includes("chrome")) {
     document.documentElement.classList.add("browser-chrome");
-  else if (browser.includes("firefox"))
+  } else if (browser.includes("firefox")) {
     document.documentElement.classList.add("browser-firefox");
-  else if (browser.includes("safari"))
+  } else if (browser.includes("safari")) {
     document.documentElement.classList.add("browser-safari");
+  }
 }
 
 function updateHomePageStyle(value) {

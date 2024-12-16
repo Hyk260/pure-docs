@@ -19,6 +19,10 @@ PureChat 是一款优雅的聊天应用，内置ChatGPT Ollama等大预言模型
 - master分支基于`Vue CLI5`构建（不再维护）
 - electron分支基于main开发使用`electron-vite`构建
 
+## 技术架构
+- 前端: Vue3 + Tailwind CSS + Electron + ElementPlus
+- 后端: Nodejs + Express + Redis
+
 ## Web
 
 ### @成员功能
@@ -52,8 +56,8 @@ PureChat 是一款优雅的聊天应用，内置ChatGPT Ollama等大预言模型
 ### 富文本框
 - 基于 `wangEditor 5` 的富文本框，支持多类型消息混合发送，满足个性化表达。
 
-### 内置ai
-- 集成 ChatGPT Ollama等大模型，支持上下文理解，预设提示词，流式输出，需要使用自己的key。
+### AI大模型
+- 集成 ChatGPT，Ollama，零一万物，智谱，等大模型，支持上下文理解，自定义预设提示词，流式输出，需要使用自己的key。
 
 ### 会话列表功能
 - 切换会话时，输入框草稿自动保存与回填，方便用户继续编辑。

@@ -29,6 +29,7 @@ export default {
     return h(layout);
   },
   enhanceApp({ app, router, siteData }) {
+    if (typeof window === "undefined") return;
     app.component("Callout", Callout);
     app.component("ContentIntegrations", ContentIntegrations);
     app.use(TwoslashFloatingVue);

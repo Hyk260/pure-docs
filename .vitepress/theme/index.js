@@ -17,7 +17,6 @@ import "./style/index.css";
 import "@shikijs/vitepress-twoslash/style.css";
 import "virtual:group-icons.css";
 
-
 let homePageStyle = null;
 
 export default {

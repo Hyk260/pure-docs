@@ -29,9 +29,21 @@ git clone https://gitee.com/H260788/PureChat.git
 
 #### 安装依赖
 
-```bash
+::: code-group
+
+```bash [pnpm]
 pnpm install
 ```
+
+```bash [yarn]
+yarn install
+```
+
+```bash [npm]
+npm install 
+```
+
+:::
 
 #### 启动项目
 
@@ -65,8 +77,8 @@ pnpm run app:builder:mac
 
 :::
 
-## 后端代码
-Node.js API service 基于 Node.js 的 API 服务，[项目地址](https://github.com/Hyk260/pure-backend)
+## 后端代码 
+基于 Node.js 的 API 服务，[项目地址](https://github.com/Hyk260/pure-backend)
 
 ## VSCode插件
 

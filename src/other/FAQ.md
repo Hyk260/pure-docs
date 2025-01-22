@@ -8,7 +8,7 @@
 
 1. 询问 ChatGPT / Bing / 百度 / Google 等。
 
-| [Google](https://google.com) | [Bing](https://www.bing.com/) | ChatGPT  | [StackoverFlow](https://stackoverflow.com/) |
+| [Google](https://google.com) | [Bing](https://www.bing.com/) | [ChatGPT](https://chatgpt.com/) | [StackoverFlow](https://stackoverflow.com/) |
 | ---------------------------- | ----------------------------- | -------- | ------------------------------------------- |
 
 2. 请提供问题的背景信息和碰到问题的详细描述，高质量的提问容易获得有用的答案。
@@ -24,10 +24,12 @@
 3. 获取 appid 和 appkey
 4. 开始 [初始化sdk](https://cloud.tencent.com/document/product/269/75292)
 
-
 <img src="/images/im-1.png">
 
 <img src="/images/im-2.png">
+
+## 如何不使用im sdk?
+开启本地模式不使用腾讯IM SDK，在 `.env` 文件中[设置](https://github.com/Hyk260/PureChat/blob/main/.env#L8) `VITE_LOCAL_MODE=Y` 即可。
 
 ## 如何部署在 Vercel 上
 

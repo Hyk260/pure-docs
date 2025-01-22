@@ -36,21 +36,19 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
 
 > **免责申明**: 在此推荐的 OpenAI API Key 由第三方代理商提供，所以我们不对 API Key 的 **有效性** 和 **安全性** 负责，请你自行承担购买和使用 API Key 的风险。
 
-### `OPENAI_API_KEY`
+### `VITE_OPENAI_API_KEY`
 
 - 类型：必选
 - 描述：这是你在 OpenAI 账户页面申请的 API 密钥，可以前往 [这里](https://platform.openai.com/api-keys) 查看
 - 默认值：-
 - 示例：`sk-xxxxxx...xxxxxx`
-- 测试：`ak-a9bMv3tuBaei8i3HJ5U8AwVgcHfuG2Tufu1NXoh026rJtn31`(不定期提供免费额度)
 
-### `OPENAI_PROXY_URL`
+### `VITE_OPENAI_PROXY_URL`
 
 - 类型：可选
 - 描述：如果你手动配置了 OpenAI 接口代理，可以使用此配置项来覆盖默认的 OpenAI API 请求基础 URL
 - 默认值：`https://api.openai.com/`
 - 示例：`https://api.chatanywhere.cn/` 或 `https://aihubmix.com/`
-- 测试：`https://api.nextapi.fun/`
 
 <Callout type='warning'>
   请检查你的代理服务商的请求后缀，有的代理服务商会在请求后缀添加
@@ -63,10 +61,17 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
   `api.openai.com` 域名，那么你就要自己加上 `/v1` 这个 url。
 </Callout>
 
+## Github
+
+### `VITE_GITHUB_API_KEY`
+- 类型：必选
+- 描述：这是你在 Github 申请的 Personal access tokens 可以前往 [这里](https://github.com/settings/tokens) 查看
+- 默认值：-
+- 示例：ghp_xxxxxx...xxxxxx=
 
 ## 智谱 AI
 
-### `ZHIPU_API_KEY`
+### `VITE_ZHIPU_API_KEY`
 
 - 类型：必选
 - 描述：这是你在 智谱 AI 服务中申请的 API 密钥， 可以前往 [这里](https://open.bigmodel.cn/usercenter/apikeys) 查看
@@ -75,7 +80,7 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
 
 ## 01 AI
 
-### `ZEROONE_API_KEY`
+### `VITE_ZEROONE_API_KEY`
 
 - 类型：必选
 - 描述：这是你在零一万物服务中申请的 API 密钥， 可以前往 [这里](https://platform.lingyiwanwu.com/apikeys) 查看
@@ -84,7 +89,7 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
 
 ## 通义千问
 
-### `QWEN_API_KEY`
+### `VITE_QWEN_API_KEY`
 
 - 类型：必选
 - 描述：这是你在阿里云百炼平台上获取的 DashScope API 密钥，可以前往 [这里](https://bailian.console.aliyun.com/?apiKey=1#/api-key) 查看

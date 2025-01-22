@@ -1,6 +1,6 @@
 # 介绍
 
-PureChat 是一款优雅的聊天应用，内置ChatGPT Ollama等大预言模型，基于最新的前端技术栈，包括 Vue3, Vite5, ElementPlus 和 tailwindcss，同样是一个快速学习前沿技术的最佳实践。
+PureChat 聊天应用与AI开发框架，内置ChatGPT Ollama等大预言模型，基于最新的前端技术栈，同样是一个快速学习前沿技术的最佳实践。
 
 ## 特性
 
@@ -20,8 +20,8 @@ PureChat 是一款优雅的聊天应用，内置ChatGPT Ollama等大预言模型
 - electron分支基于main开发使用`electron-vite`构建
 
 ## 技术架构
-- 前端: Vue3 + Tailwind CSS + Electron + ElementPlus
-- 后端: Nodejs + Express + Redis
+- 前端: Vue3、Vite、Tailwind CSS、Electron、ElementPlus
+- 后端: Nodejs
 
 ## Web
 

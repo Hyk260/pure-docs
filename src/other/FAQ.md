@@ -29,7 +29,7 @@
 <img src="/images/im-2.png">
 
 ## 如何不使用im sdk?
-开启本地模式不使用腾讯IM SDK，在 `.env` 文件中[设置](https://github.com/Hyk260/PureChat/blob/main/.env#L8) `VITE_LOCAL_MODE=Y` 即可。
+开启本地模式不使用腾讯IM SDK，在 `.env` 文件中[设置](https://github.com/Hyk260/PureChat/blob/main/.env#L8) `VITE_LOCAL_MODE=Y` 即可。开启后不支持多端消息同步，做为本地ai问答工具使用。
 
 ## 如何部署在 Vercel 上
 

@@ -1,18 +1,9 @@
 # 介绍
 
-PureChat 聊天应用与AI开发框架，内置ChatGPT Ollama等大预言模型，基于最新的前端技术栈，同样是一个快速学习前沿技术的最佳实践。
+PureChat 是一款结合 AI 和前沿技术的聊天应用，内置ChatGPT Ollama等大预言模型，助力开发者快速掌握现代技术。
 
 ## 特性
-
-- 📦️ 基于 Vite5，构建高效应用
-- 📸 聊天记录支持生成截图并支持一键复制
-- ☁️ 聊天工作室基于 IM 即时通讯 SDK
-- 🌙 根据系统主题自动切换光明与黑暗模式
-- 📝 支持 Markdown 渲染，代码高亮，链接识别
-- 🛡️ GitHub 快速登录，享受无缝社交体验
-- 🤖 集成 ChatGPT Ollama等大语言模型，支持流式输出 预设提示词 以及上下文
-- ✨ 提供桌面应用 Electron 版本，支持 macOS (.dmg) 与 Windows (.exe)
-- 🛠 更多特性持续开发中
+[README](https://github.com/Hyk260/PureChat/blob/main/README.md)
 
 ## 分支
 - main为主分支 基于`Vite5`构建

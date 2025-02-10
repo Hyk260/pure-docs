@@ -22,3 +22,37 @@
 *::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
+/* 字体 */
+@font-face {
+  font-display: swap;
+  font-family: Alimama;
+  src: url("/Alimama.woff2") format("woff2");
+}
+
+@media screen and (width <=768px) {
+  html {
+    /* 当前屏幕尺寸除以划分的等份:320/15 */
+    font-size: 14px;
+  }
+}
+
+@media screen and (width >=750px) {
+  html {
+    /* 当前屏幕尺寸除以划分的等份:720/15 */
+    font-size: 16px;
+  }
+}
+
+:root {
+  --font-family: "Alimama";
+  font-family: var(--font-family); 
+}
+
+html,
+body {
+  min-width: fit-content;
+  font-family: var(--font-family), Helvetica, sans-serif;
+  /* 滚动平滑 */
+  scroll-behavior: smooth;
+}

@@ -8,6 +8,7 @@ import {
 } from "vitepress-plugin-group-icons";
 import { transformerTwoslash } from "@shikijs/vitepress-twoslash";
 import { qqSvg } from "../src/icon/qqSvg";
+import UnoCSS from 'unocss/vite'
 
 const Nav = [
   { text: "介绍", link: "/preface/" },
@@ -157,6 +158,7 @@ export default defineConfig({
   cacheDir: path.join(process.cwd(), "cache"),
   vite: {
     plugins: [
+      UnoCSS(),
       groupIconVitePlugin({
         customIcon: {
           gitlab: "vscode-icons:file-type-gitlab",

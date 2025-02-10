@@ -1,41 +1,14 @@
 <script setup>
-import { useData } from 'vitepress';
-import DefaultTheme from 'vitepress/theme';
-import { nextTick, provide } from 'vue';
-import HomePage from './components/HomePage.vue';
+import DefaultTheme from "vitepress/theme";
+import HomePage from "./components/HomePage.vue";
+import { useImageView } from "../utils/useImageView";
+import { useToggleTheme } from "../utils/useToggleTheme";
+import 'uno.css'
 
-const { isDark } = useData()
-
-function enableTransitions() {
-  return 'startViewTransition' in document
-    && window.matchMedia('(prefers-reduced-motion: no-preference)').matches
-}
-
-provide('toggle-appearance', async ({ clientX: x, clientY: y }) => {
-  if (!enableTransitions()) {
-    isDark.value = !isDark.value
-    return
-  }
-
-  const clipPath = [
-    `circle(0px at ${x}px ${y}px)`,
-    `circle(${Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y),)}px at ${x}px ${y}px)`,
-  ]
-
-  await document.startViewTransition(async () => {
-    isDark.value = !isDark.value
-    await nextTick()
-  }).ready
-
-  document.documentElement.animate(
-    { clipPath: isDark.value ? clipPath.reverse() : clipPath },
-    {
-      duration: 300,
-      easing: 'ease-in',
-      pseudoElement: `::view-transition-${isDark.value ? 'old' : 'new'}(root)`,
-    },
-  )
-})
+// 切换动画
+useToggleTheme()
+//  图片缩放
+useImageView();
 </script>
 
 <template>
@@ -45,3 +18,14 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }) => {
     </template>
   </DefaultTheme.Layout>
 </template>
+
+<style>
+/* 图片遮挡 */
+.medium-zoom-overlay {
+  z-index: 999;
+  --at-apply: "card-df-br";
+}
+.medium-zoom-image.medium-zoom-image--opened {
+  z-index: 1000;
+}
+</style>

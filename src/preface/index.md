@@ -1,6 +1,7 @@
-# 介绍
+# 项目介绍
 
-PureChat 是一款结合 AI 和前沿技术的聊天应用，内置ChatGPT Ollama等大预言模型，助力开发者快速掌握现代技术。
+> PureChat 是一款基于 Vue3 + ElementPlus，结合 AI 和前沿技术的聊天应用，内置OpenAI，Ollama，DeepSeek等大预言模型，助力开发者快速掌握现代技术。
+- 体验链接：[网页版](https://purechat.cn)
 
 ## 特性
 [README](https://github.com/Hyk260/PureChat/blob/main/README.md)
@@ -11,7 +12,7 @@ PureChat 是一款结合 AI 和前沿技术的聊天应用，内置ChatGPT Ollam
 - electron分支基于main开发使用`electron-vite`构建
 
 ## 技术架构
-- 前端: Vue3、Vite、Tailwind CSS、Electron、ElementPlus
+- 前端: Vue3、Vite、Electron、ElementPlus
 - 后端: Nodejs
 
 ## Web
@@ -48,7 +49,7 @@ PureChat 是一款结合 AI 和前沿技术的聊天应用，内置ChatGPT Ollam
 - 基于 `wangEditor 5` 的富文本框，支持多类型消息混合发送，满足个性化表达。
 
 ### AI大模型
-- 集成 ChatGPT，Ollama，零一万物，智谱，等大模型，支持上下文理解，自定义预设提示词，流式输出，需要使用自己的key。
+- 集成 OpenAI，Ollama，DeepSeek，零一万物，智谱，等大模型，支持上下文理解，自定义预设提示词，流式输出，需要使用自己的key。
 
 ### 会话列表功能
 - 切换会话时，输入框草稿自动保存与回填，方便用户继续编辑。
@@ -84,11 +85,17 @@ PureChat / tools:
 
 ![PurerChat Star History Chart](https://api.star-history.com/svg?repos=Hyk260/PureChat&type=Date)
 
+## Github 活跃度
+
+> 以下使用 https://postspark.app/github-contributions 生成
+
+<img src="/screenshot/liveness.png">
+
 ## 截图
 
-<img src="/screenshot/chatgpt.png">
+<img src="/screenshot/chat.png">
 
-<img src="/screenshot/assistant.png">
+<img src="/screenshot/discover.png">
 
 <img src="/screenshot/config.png">
 

@@ -83,7 +83,7 @@ PureChat / tools:
 
 ## Star History
 
-![PurerChat Star History Chart](https://api.star-history.com/svg?repos=Hyk260/PureChat&type=Date)
+![PurerChat Star History](/screenshot/star-history.png)
 
 ## Github 活跃度
 

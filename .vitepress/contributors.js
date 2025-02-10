@@ -30,7 +30,4 @@ const plainTeamMembers = [
   },
 ];
 
-const teamMembers = plainTeamMembers.map((tm) => createLinks(tm));
-
-export { teamMembers };
-
+export const teamMembers = plainTeamMembers.map((tm) => createLinks(tm));

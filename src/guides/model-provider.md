@@ -61,13 +61,21 @@ API Key 是使用 PureChat 进行大语言模型会话的必要信息，本节�
   `api.openai.com` 域名，那么你就要自己加上 `/v1` 这个 url。
 </Callout>
 
+## DeepSeek
+
+### `VITE_DEEPSEEK_API_KEY`
+- 类型：必选
+- 描述：这是你在 DeepSeek AI 服务中申请的 API 密钥
+- 默认值：-
+- 示例：`sk-xxxxxx...xxxxxx`
+
 ## Github
 
 ### `VITE_GITHUB_API_KEY`
 - 类型：必选
 - 描述：这是你在 Github 申请的 Personal access tokens 可以前往 [这里](https://github.com/settings/tokens) 查看
 - 默认值：-
-- 示例：ghp_xxxxxx...xxxxxx=
+- 示例：`ghp_xxxxxx...xxxxxx=`
 
 ## 智谱 AI
 

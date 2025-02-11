@@ -16,6 +16,11 @@
 <script setup>
 import { VPTeamMembers } from "vitepress/theme";
 import { teamMembers } from "../../contributors";
+
+defineOptions({
+  name: "HomePage",
+})
+
 </script>
 
 <style scoped>

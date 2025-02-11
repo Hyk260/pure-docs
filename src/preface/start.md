@@ -108,4 +108,4 @@ pnpm run app:builder:mac
 
 将 svg 图标文件放在 `src/icons/svg` 目录下
 
-在项目中直接使用 `<svg-icon iconClass="图标文件命名" />` 即可
+在项目中直接使用 `<SvgIcon local-icon="图标文件命名" />` 即可

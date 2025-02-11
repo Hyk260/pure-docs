@@ -22,7 +22,7 @@ hero:
 features:
   - icon: <span class="iconify logos-openai"></span>
     title: OpenAI
-    details: 集成 ChatGPT Ollama等大语言模型
+    details: 集成 OpenAI，Ollama，DeepSeek等大语言模型
   - icon: 💬
     title: 会话
     details: 基于腾讯 IM SDK 的即时通信

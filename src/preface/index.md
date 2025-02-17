@@ -85,7 +85,7 @@ PureChat / tools:
 
 ![PurerChat Star History](/screenshot/star-history.png)
 
-## Github 活跃度
+## GitHub 活跃度
 
 > 以下使用 https://postspark.app/github-contributions 生成
 

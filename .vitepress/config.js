@@ -86,7 +86,7 @@ export default defineConfig({
   lang: "zh-CN",
   title: "PureChat",
   // https://vitepress.dev/zh/reference/site-config#base
-  base: "/pure-docs/", // /pure-docs/
+  base: "/pure-docs/",
   description: "PureChat文档",
   head: Head,
   themeConfig: {
@@ -165,8 +165,8 @@ export default defineConfig({
         },
       }),
     ],
-    server: {
-      open: true,
-    },
+    // server: {
+    //   open: true,
+    // },
   },
 });

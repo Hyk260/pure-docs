@@ -1,2 +1,2 @@
-# pure-docs
+# pure-chat-docs
 PureChat文档

@@ -6,10 +6,10 @@
 
 ## 如何快速获得帮助？
 
-1. 询问 ChatGPT / Bing / 百度 / Google 等。
+1. 询问 DeepSeek /ChatGPT / Bing / 等。
 
-| [Google](https://google.com) | [Bing](https://www.bing.com/) | [ChatGPT](https://chatgpt.com/) | [StackoverFlow](https://stackoverflow.com/) |
-| ---------------------------- | ----------------------------- | -------- | ------------------------------------------- |
+| [DeepSeek](https://deepseek.com) | [Bing](https://www.bing.com) | [ChatGPT](https://chatgpt.com) | [StackoverFlow](https://stackoverflow.com) | 
+| --------------- | ------- | ------- | ---------------------- |
 
 2. 请提供问题的背景信息和碰到问题的详细描述，高质量的提问容易获得有用的答案。
 3. 在PureChat官方交流群里面提问，请尽量描述清楚问题，以便大家更好的帮助你。 [加群](https://jq.qq.com/?_wv=1027&k=Cd4Ihd2J)

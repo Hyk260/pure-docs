@@ -13,8 +13,7 @@
 
 ## 技术架构
 - 前端: Vue3、Vite、Electron、ElementPlus
-- 后端: Nodejs
-
+- 后端: Nodejs、Express
 ## Web
 
 ### @成员功能

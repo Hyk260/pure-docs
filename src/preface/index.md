@@ -1,6 +1,6 @@
 # 项目介绍
 
-> PureChat 是一款基于 Vue3 + ElementPlus，结合 AI 和前沿技术的聊天应用，内置OpenAI，Ollama，DeepSeek等大预言模型，助力开发者快速掌握现代技术。
+> PureChat 是一款基于 Vue3 + ElementPlus，结合 AI 和前沿技术的聊天应用，内置OpenAI，Ollama，DeepSeek等大预言模型，支持 Markdown 渲染，聊天记录生成截图，主题切换，助力开发者快速掌握现代技术。
 - 体验链接：[网页版](https://purechat.cn)
 
 ## 特性
@@ -12,7 +12,7 @@
 - electron分支基于main开发使用`electron-vite`构建
 
 ## 技术架构
-- 前端: Vue3、Vite、Electron、ElementPlus
+- 前端: Vue3、Vite5、Electron、ElementPlus
 - 后端: Nodejs、Express
 ## Web
 

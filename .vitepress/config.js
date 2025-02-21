@@ -63,9 +63,17 @@ const Sidebar = [
     // collapsed: true,
     items: [
       // { text: "技术网站", link: "/other/recommendation" },
-      { text: "常见问题", link: "/other/FAQ" },
       { text: "更新日志", link: "/other/logs" },
       { text: "私有化部署", link: "/other/deploy" },
+    ],
+  },
+  {
+    text: "问题&反馈",
+    items: [
+      { text: "常见问题", link: "/feedback/questions" },
+      {
+        text: "知识科普", link: "/feedback/knowledge"
+      }
     ],
   },
   {

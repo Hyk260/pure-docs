@@ -1,6 +1,6 @@
 import path from "node:path";
 import process from "node:process";
-import { defineConfig } from "vitepress";
+import { defineConfig, loadEnv } from "vitepress";
 import {
   groupIconMdPlugin,
   groupIconVitePlugin,
@@ -88,93 +88,98 @@ const Sidebar = [
   },
 ];
 
-const ogUrl = "https://hyk260.github.io/pure-docs";
+const ogUrl = "https://docs.purechat.cn";
 
-export default defineConfig({
-  lang: "zh-CN",
-  title: "PureChat",
-  // https://vitepress.dev/zh/reference/site-config#base
-  base: "/pure-docs/",
-  description: "PureChat文档",
-  head: Head,
-  themeConfig: {
-    editLink: {
-      pattern: "https://github.com/Hyk260/pure-docs/edit/main/src/:path",
-      text: "为此页提供修改建议",
-    },
-    outline: {
-      label: "本页目录",
-      level: [2, 3],
-    },
-    // 自定义上次更新的文本和日期格式。
-    lastUpdated: {
-      text: "上次更新",
-      formatOptions: {
-        dateStyle: "full",
-        timeStyle: "medium",
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd())
+  console.log("env", env);
+
+  return {
+    lang: "zh-CN",
+    title: "PureChatDocs",
+    // https://vitepress.dev/zh/reference/site-config#base
+    base: env.VITE_BASE_URL,
+    description: "PureChat文档",
+    head: Head,
+    themeConfig: {
+      editLink: {
+        pattern: "https://github.com/Hyk260/PureChatDocs/edit/main/src/:path",
+        text: "为此页提供修改建议",
       },
-    },
-    // https://vitepress.dev/zh/reference/site-config#cleanurls
-    cleanUrls: true,
-    // https://vitepress.dev/zh/reference/site-config#ignoredeadlinks
-    ignoreDeadLinks: [/^\/play/, /^\/interactive/, /:\/\/localhost/],
-    markdown: {
-      config(md) {
-        md.use(groupIconMdPlugin);
+      outline: {
+        label: "本页目录",
+        level: [2, 3],
       },
-      codeTransformers: [transformerTwoslash()],
-      theme: {
-        light: "vitesse-light",
-        dark: "vitesse-dark",
-      },
-    },
-    transformPageData(pageData) {
-      const canonicalUrl = `${ogUrl}/${pageData.relativePath}`
-        .replace(/\/index\.md$/, "/")
-        .replace(/\.md$/, "/");
-      pageData.frontmatter.head ??= [];
-      pageData.frontmatter.head.unshift(
-        ["link", { rel: "canonical", href: canonicalUrl }],
-        ["meta", { property: "og:title", content: pageData.title }]
-      );
-      return pageData;
-    },
-    // 导航栏上显示的 Logo，位于站点标题右侧。
-    logo: "/favicon.png",
-    socialLinks: [
-      { icon: "github", link: "https://github.com/Hyk260/PureChat" },
-      {
-        icon: { svg: qqSvg },
-        link: "https://jq.qq.com/?_wv=1027&k=Cd4Ihd2J",
-      },
-    ],
-    nav: Nav,
-    sidebar: Sidebar,
-    // https://vitepress.dev/zh/reference/default-theme-footer#footer
-    footer: {
-      message: "Released under the MIT License.",
-      copyright: "Copyright (c) 2023 yongkang",
-    },
-    search: {
-      provider: "local",
-    },
-  },
-  srcDir: path.join(process.cwd(), "src"),
-  // 项目的构建输出位置，相对于项目根目录
-  outDir: path.join(process.cwd(), "docs"),
-  // 缓存文件的目录，相对于项目根目录
-  cacheDir: path.join(process.cwd(), "cache"),
-  vite: {
-    plugins: [
-      UnoCSS(),
-      groupIconVitePlugin({
-        customIcon: {
-          gitlab: "vscode-icons:file-type-gitlab",
+      // 自定义上次更新的文本和日期格式。
+      lastUpdated: {
+        text: "上次更新",
+        formatOptions: {
+          dateStyle: "full",
+          timeStyle: "medium",
         },
-      }),
-    ],
-    // server: {
-    //   open: true,
-    // },
-  },
+      },
+      // https://vitepress.dev/zh/reference/site-config#cleanurls
+      cleanUrls: true,
+      // https://vitepress.dev/zh/reference/site-config#ignoredeadlinks
+      ignoreDeadLinks: [/^\/play/, /^\/interactive/, /:\/\/localhost/],
+      markdown: {
+        config(md) {
+          md.use(groupIconMdPlugin);
+        },
+        codeTransformers: [transformerTwoslash()],
+        theme: {
+          light: "vitesse-light",
+          dark: "vitesse-dark",
+        },
+      },
+      transformPageData(pageData) {
+        const canonicalUrl = `${ogUrl}/${pageData.relativePath}`
+          .replace(/\/index\.md$/, "/")
+          .replace(/\.md$/, "/");
+        pageData.frontmatter.head ??= [];
+        pageData.frontmatter.head.unshift(
+          ["link", { rel: "canonical", href: canonicalUrl }],
+          ["meta", { property: "og:title", content: pageData.title }]
+        );
+        return pageData;
+      },
+      // 导航栏上显示的 Logo，位于站点标题右侧。
+      logo: "/favicon.png",
+      socialLinks: [
+        { icon: "github", link: "https://github.com/Hyk260/PureChat" },
+        {
+          icon: { svg: qqSvg },
+          link: "https://jq.qq.com/?_wv=1027&k=Cd4Ihd2J",
+        },
+      ],
+      nav: Nav,
+      sidebar: Sidebar,
+      // https://vitepress.dev/zh/reference/default-theme-footer#footer
+      footer: {
+        message: "Released under the MIT License.",
+        copyright: "Copyright (c) 2023 yongkang",
+      },
+      search: {
+        provider: "local",
+      },
+    },
+    srcDir: path.join(process.cwd(), "src"),
+    // 项目的构建输出位置，相对于项目根目录
+    outDir: path.join(process.cwd(), "docs"),
+    // 缓存文件的目录，相对于项目根目录
+    cacheDir: path.join(process.cwd(), "cache"),
+    vite: {
+      plugins: [
+        UnoCSS(),
+        groupIconVitePlugin({
+          customIcon: {
+            gitlab: "vscode-icons:file-type-gitlab",
+          },
+        }),
+      ],
+      // server: {
+      //   open: true,
+      // },
+    },
+  }
 });

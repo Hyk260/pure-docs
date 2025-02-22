@@ -3,6 +3,7 @@ import DefaultTheme from "vitepress/theme";
 import { h, watch } from "vue";
 import layout from "./layout.vue";
 import Callout from "./components/Callout.vue";
+import DeployButton from "./components/DeployButton.vue";
 import ContentIntegrations from "./components/ContentIntegrations.vue";
 import AsideSponsors from "./components/AsideSponsors.vue";
 import TwoslashFloatingVue from "@shikijs/vitepress-twoslash/client";
@@ -30,6 +31,7 @@ export default {
   enhanceApp({ app, router, siteData }) {
     if (typeof window === "undefined") return;
     app.component("Callout", Callout);
+    app.component("DeployButton", DeployButton);
     app.component("ContentIntegrations", ContentIntegrations);
     app.use(TwoslashFloatingVue);
 

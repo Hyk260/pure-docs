@@ -10,7 +10,9 @@
 
 ### 点击下方按钮进行部署
 
-[![][deploy-button-image]][deploy-link]
+<deploy-button />
+
+<!-- [![][deploy-button]][deploy-link] -->
 直接使用 GitHub 账号登录即可，在环境变量页填入
 `ENABLE_EXPERIMENTAL_COREPACK` （实验性 corepack）
 `VITE_IM_SDK_APPID`（腾讯IM sdkappid）
@@ -28,5 +30,5 @@ Vercel 分配的域名 DNS 在某些区域被污染了，绑定自定义域名�
 
 <!-- LINK GROUP -->
 
-[deploy-button-image]: https://vercel.com/button
+[deploy-button]: https://vercel.com/button
 [deploy-link]: https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FHyk260%2FPureChat&env=ENABLE_EXPERIMENTAL_COREPACK,VITE_IM_SDK_APPID,VITE_SERVICE_BASE_URL&project-name=pure-chat&repository-name=pure-chat

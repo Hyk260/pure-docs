@@ -96,7 +96,7 @@ export default defineConfig(({ mode }) => {
 
   return {
     lang: "zh-CN",
-    title: "PureChatDocs",
+    title: "PureChat",
     // https://vitepress.dev/zh/reference/site-config#base
     base: env.VITE_BASE_URL,
     description: "PureChat文档",

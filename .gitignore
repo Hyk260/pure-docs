@@ -2,8 +2,8 @@
 node_modules
 
 # Yarn lock file
-yarn.lock
-pnpm-lock.yaml
+# yarn.lock
+# pnpm-lock.yaml
 
 # cache
 cache

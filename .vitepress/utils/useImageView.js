@@ -18,6 +18,9 @@ export function useImageView() {
   watch(
     () => route.path,
     () => {
+      const targets = ["deploy"];
+      const result = targets.some(target => route.path.includes(target));
+      if (result) return;
       if (route && route.path !== "/") nextTick(() => initZoom());
     }
   );

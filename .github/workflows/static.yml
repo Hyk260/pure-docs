@@ -1,55 +1,36 @@
-name: Deploy VitePress static content to Pages
+name: Deploy VitePress to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+    branches: [main]  # 监听 main 分支的推送事件
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    permissions:
+      pages: write  # 允许向 gh-pages 分支写入
+      id-token: write  # 允许 OIDC 令牌验证
+
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: 'pnpm'
+          node-version: 20  # 建议与本地版本一致
+          cache: 'npm'      # 启用 npm 缓存加速
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          version: 8
-
-      - name: Install dependencies
-        run: pnpm install
-
-      - name: Build VitePress site
-        run: pnpm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # 修改为打包文件所在的 /docs 目录
-          path: './docs'
+          path: docs/
 
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4

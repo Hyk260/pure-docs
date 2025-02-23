@@ -10,5 +10,6 @@ cache
 
 # build
 /dist
+/docs
 
 .env.local

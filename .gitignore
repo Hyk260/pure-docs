@@ -1,4 +1,4 @@
-# .gitignore
+# Dependency directories
 node_modules
 
 # Yarn lock file
@@ -9,7 +9,9 @@ node_modules
 cache
 
 # build
-/dist
-/docs
+dist
+docs
 
-.env.local
+# dotenv environment variables file
+.env.local 
+.env.*.local
